@@ -10,3 +10,7 @@ var age;
 var valeurvehicule;
 var taux;
 
+sexe = (prompt ("Veuillez entrer votre sexe : M ou F."));
+age = Number(prompt ("Veuillez entre votre age"));
+valeurvehicule = Number(prompt ("Veuillez entrer la valeur de votre véhicule"));
+

@@ -9,7 +9,7 @@ var mdp;
 user = (prompt ("Veuillez entrer votre nom d'utilisateur"));
 mdp = Number (prompt ("Veuillez entrer votre mot de passe"));
 
-if (user == "admin" && mdp == "12345"){
+if (user === "admin" && mdp === "12345"){
     console.log ("Bonjour [nom de l’utilisateur]")
 }
 

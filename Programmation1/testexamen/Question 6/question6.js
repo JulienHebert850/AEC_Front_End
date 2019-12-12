@@ -68,4 +68,3 @@ else (leds ="avec des leds");
 //Résumé de la commande
 document.write ("Vous avez commandé un " +controleur, ", "+moteurs, " moteurs, " +camera, " et " +leds,". Le prix de votre robot est de " +prix,"$. Le prix de votre robot incluant la livraison est de " +prixlivraison, "$.");
 
-
