@@ -1,0 +1,1 @@
+//Transférer les valeurs Fahrenheit de 10 à 20 en Celsius par tranche de 1.

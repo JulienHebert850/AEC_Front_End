@@ -9,25 +9,27 @@
 //
 // Si note ne contient aucune de ces valeurs, alors affichez ″Pas encore né.″.
 
+//Créé par Julien Hébert le 12 décembre 2019
+
 
 var age;
 
-age = Number(prompt("Veuillez entrer votre age."));
+age = Number(prompt("Veuillez entrer votre âge."));
 
 if (age >=0 && age <=12){
-    document.write ("Vous êtes dans la tranche d'age enfant.");
+    document.write ("Vous êtes dans la tranche d'âge enfant.");
 }
 
 else if (age >=13 && age <=17){
-    document.write ("Vous êtes dans la tranche d'age adolescent.");
+    document.write ("Vous êtes dans la tranche d'âge adolescent.");
 }
 
 else if (age >=18 && age <=54){
-    document.write ("Vous êtes dans la tranche d'age adulte.");
+    document.write ("Vous êtes dans la tranche d'âge adulte.");
 }
 
 else if (age >=55){
-    document.write ("Vous êtes dans la tranche d'age senior.");
+    document.write ("Vous êtes dans la tranche d'âge senior.");
 }
 
 else document.write ("Pas encore né.");

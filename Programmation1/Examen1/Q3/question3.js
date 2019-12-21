@@ -9,6 +9,11 @@
 // Le TVQ s’élève à 9,975% du prix sans les taxes.
 // Produisez une facture qui résume l’achat, le prix avant et après les taxes.
 
+
+//Créé par Julien Hébert
+//12 Décembre 2019
+
+
 var nbpersonne;
 var legumes;
 var prixlegumes;
@@ -35,7 +40,7 @@ else (prixlegumes = 0);
 
 //calcul prix pepperoni
 if (pepperoni === "oui"){
-    prixpepperoni = nbpersonne;
+    prixpepperoni = 8;
 }
 else (prixpepperoni = 0);
 
@@ -70,5 +75,5 @@ if (sauce === "oui"){
 else (sauce = "sans sauce");
 
 
-document.write ("Vous avez passé une commande pour une pizza " +legumes, ", " +pepperoni, " et " +sauce, ". Le prix avant taxes de votre pizza est de " +prixtotalbrut, "$ et " +prixtotaltpstvq, "$ après les taxes.");
+document.write ("Vous avez commandé une pizza pour " +nbpersonne, " personnes, " +legumes, ", " +pepperoni, " et " +sauce, ". Le prix avant taxes de votre pizza est de " +prixtotalbrut, "$ et de " +prixtotaltpstvq, "$ après les taxes.");
 

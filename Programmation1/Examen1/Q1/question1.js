@@ -7,6 +7,8 @@
 //
 // Écrivez un programme qui demande, pour une inscription donnée, le nombre de personnes et affichera le montant de l’inscription à la fin.
 
+//Créé par Julien Hébert le 12 décembre 2019
+
 var nbpersonne;
 var prixbase;
 var prix10personnes;
@@ -16,26 +18,26 @@ var prix40personnes;
 
 nbpersonne = Number (prompt("Combien de personnes compte votre groupe?"));
 
-//Calcul du rabais seleon le nombre de personnes
+//Calcul du rabais selon le nombre de personnes
 prixbase = 50*nbpersonne;
-prix10personnes = ((50*5)/100)*nbpersonne;
-prix20personnes = ((50*10)/100)*nbpersonne;
-prix30personnes = ((50*15)/100)*nbpersonne;
-prix40personnes = ((50*20)/100)*nbpersonne;
+prix10personnes = ((50*0.95)*nbpersonne);
+prix20personnes = ((50*0.9)*nbpersonne);
+prix30personnes = ((50*0.85)*nbpersonne);
+prix40personnes = ((50*0.8)*nbpersonne);
 
-if (nbpersonne <10){
+if (nbpersonne >=1 && nbpersonne <=0){
     document.write("Aucun rabais n'est disponible pour les groupes de moins de 10 personnes. Le prix pour le groupe est de " +prixbase,"$.");
 }
 
-else if (nbpersonne >=10){
+else if (nbpersonne >=10 && nbpersonne <=19){
     document.write("Le prix pour votre groupe est de " +prix10personnes,"$.");
 }
 
-else if (nbpersonne >=20){
+else if (nbpersonne >=20 && nbpersonne <=29){
     document.write("Le prix pour votre groupe est de " +prix20personnes,"$.");
 }
 
-else if (nbpersonne >=30){
+else if (nbpersonne >=30 && nbpersonne <=39){
     document.write("Le prix pour votre groupe est de " +prix30personnes,"$.");
 }
 

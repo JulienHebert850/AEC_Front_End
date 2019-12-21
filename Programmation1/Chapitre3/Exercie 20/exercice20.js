@@ -1,0 +1,1 @@
+//Faites afficher 10 8 6 4 2 0 sur 12 lignes.
