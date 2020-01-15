@@ -1,0 +1,60 @@
+@font-face{
+    font-family: star;
+    src: url("../font/Starjedi.ttf");
+}
+
+.star{
+    font-family:'star';
+    font-size: 140px;
+    color: yellow;
+}
+
+body {
+    width: 1000px;
+    background-image: url("../img/etoilemort.jpg");
+    background-repeat: no-repeat;
+    background-color: black;
+    margin: auto;
+}
+
+h1{
+    font-family:'star';
+    color:yellow;
+    text-align: center;
+}
+
+h2,h3,h4{
+    color:white;
+    text-align: center;
+}
+
+h2{
+    font-size:72px;
+}
+
+h3{
+    font-size:60px;
+}
+
+h4{
+    font-size:44px;
+}
+
+p{
+    text-align: justify;
+    color:white;
+    font-size:16px;
+}
+img{
+    display:block;
+    margin:auto;
+}
+
+.films{
+    color:yellow;
+}
+
+a{
+    color:white;
+    text-decoration:underline;
+}

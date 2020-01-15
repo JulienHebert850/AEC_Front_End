@@ -1,11 +1,12 @@
 //Demandez un mot à l’usager, bouclez tant que le mot n’est pas patate.
 // Comptez et affichez le nombre de mots entrés avant le mot patate.
 
-var mot;
+var nbMots = -1;
+var mot = "";
 
-mot = prompt("Veuillez entrer un mot.");
-
-var i;
-for (i = 0; i < cars.length; i++) {
-    text += cars[i] + "<br>";
+while (mot != "patate"){
+    mot=prompt("Entrez un mot:");
+    nbMots++;
 }
+
+document.write("Vous avez entré " +nbMots+" mots AVANT patate");
