@@ -1,0 +1,42 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.big-banner{
+    background-image: url('../img/AC2-2.jpg') ;
+
+}
+
+.navbar-brand{
+    font-size: 35px;
+    color: red !important;
+}
+
+.site-title{
+    margin-top: 30%;
+    margin-bottom: 6%;
+    font-size: 50px;
+    color: black !important;
+
+}
+
+.nav-link:hover{
+    color: red !important;
+}
+
+.active .nav-link{
+    color: red !important;
+}
+
+.menu-right-btn{
+    padding: 13px 46px;
+    margin-right: 4%;
+    background-color: transparent;
+    transition: all 300ms ease-in;
+}
+
+.menu-right-btn:hover{
+    color: white !important;
+    background-color: red !important;
+}
