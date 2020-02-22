@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8">
+    <title>Jumbotron</title>
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.css">
+</head>
+<body>
+<!-- Bouton qui ouvre le modal (nous verrons d’autres façons de l’ouvrir avec Javascript) -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+    Ouvrir le modal
+</button>
+
+<div class="modal" tabindex="-1" role="dialog" id="exampleModal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">F1 2020</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12">
+                        <h1 class="display-4">Formule 1 2020</h1>
+                        <p class="lead">Qui l'emportera entre Ferrari, Red Bull et Mercedes cette année en Formule 1?</p>
+                        <img src="img/GettyImages-1180733959.jpg"width="75%"/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container-fluid pt-5">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="img/ferrarif1.png"  width="50%"/>
+                                <p>Scuderia Ferrari F1 Team</p>
+                            </div>
+                            <div class="col-md-4">
+                                <img src="img/mercedesf1.jpg" width="50%"/>
+                                <p>Mercedes-Benz F1 Team</p>
+                            </div>
+                            <div class="col-md-4">
+                                <img src="img/redbullf1.png" width="50%"/>
+                                <p>Red Bull F1 Team</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid pl-3">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p>Début de la saison : 15 Mars 2020 - Fin de la saison 29 Novembre 2020</p>
+                            </div>
+                        </div>
+                   </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Save changes</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="Bootstrap/jquery-3.4.1.min.js"></script>
+<script src="Bootstrap/js/bootstrap.js"></script>
+</body>
+</html>
