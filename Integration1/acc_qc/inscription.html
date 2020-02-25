@@ -21,11 +21,10 @@
         <div class="navbar-nav mr-auto">
             <li class="nav-item active"><a class="nav-link" href="index.html">Accueil<span class="sr-only">(current)</span></a></li>
             <li class="nav-item"><a class="nav-link" href="championnats.html">Championnats</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Pilotes</a></li>
+            <li class="nav-item"><a class="nav-link" href="pilotes.html">Pilotes</a></li>
             <li class="nav-item"><a class="nav-link" href="regles.html">Réglementation</a></li>
             <li class="nav-item"><a class="nav-link" href="inscription.html">Inscription</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Diffusions</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Contacts</a></li>
+            <li class="nav-item"><a class="nav-link" href="diffusion.html">Diffusions</a></li>
         </div>
         <span class="navbar-brand"><a class="nav-link" href="https://www.facebook.com/accqc/" target="_blank"><i class="fab fa-facebook"></i></a></span>
         <span class="navbar-brand"><a class="nav-link" href="https://www.youtube.com/UCRlbt6ul3iydP1Z8qAkuDpw" target="_blank"><i class="fab fa-youtube"></i></a></span>
@@ -34,74 +33,60 @@
     </div>
 </nav>
 
-<h1 class="pt-5 mt-5">Formulaire d'inscription - Assetto Corsa Competizione Québec</h1>
+<h1 class="pt-5 mt-5 text-center ">Formulaire d'inscription<br> Assetto Corsa Competizione Québec</h1>
 
-<form class="pt-5 px-5 mt-5">
+<form class="px-5 my-5">
+<!--------- Prénom et nom ---------->
     <div class="form-group pt-5">
         <label for="formnom">Prénom et nom</label>
         <input type="email" class="form-control" id="formnom" placeholder="">
     </div>
+<!--------- Courriel ---------->
     <div class="form-group">
         <label for="formcourriel">Courriel</label>
         <input type="email" class="form-control" id="formcourriel" placeholder="example@courriel.com">
     </div>
-    <label for="..." class="pr-1">Dans quelle série désiez-vous rouler?</label>
+<!--------- ACC Oui/Non ---------->
+    <p>Est-ce que vous roulez déjà sur ACC?</p>
     <div class="form-check">
-        <input class="form-check-input position-static" type="radio" name="blankRadio" id="" value="option1" aria-label="GT3 Challenge Québec">
-        <label for="..." class="pr-1">GT3 Challenge Québec</label>
-    </div>
-    <div class="form-check">
-        <input class="form-check-input position-static" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="GT3 Sprint Challenge Québec">
-        <label for="..." class="pr-1">GT3 Sprint Challenge Québec</label>
-    </div>
-    <div class="form-check">
-        <input class="form-check-input position-static" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="GT Cup Challenge Québec">
-        <label for="..." class="pr-1">GT Cup Challenge Québec</label>
-    </div>
-    <div class="form-group">
-        <label for="formnumero">Choix du numéro</label>
-        <input type="email" class="form-control" id="formnumero" placeholder="Entrez les numéros que vous aimeriez utiliser en course.">
-    </div>
-    <div class="form-group">
-        <label for="formnumero">Choix du nom d'équipe</label>
-        <input type="email" class="form-control" id="formequipe" placeholder="Entrez le nom de votre équipe si vous en avez une.">
-    </div>
-    <div class="form-group">
-        <label for="exampleFormControlSelect1">Choix du véhicule. Si vous connaissez déjà la voiture avec laquelle vous allez roulez, veuillez la sélectionner dans la liste.</label>
-        <select class="form-control" id="exampleFormControlSelect1">
-            <option>Aston Martin V8 GT3</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-        </select>
-    </div>
-    <div class="form-group">
-        <label for="exampleFormControlSelect2">Example multiple select</label>
-        <select multiple class="form-control" id="exampleFormControlSelect2">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-        </select>
-    </div>
-    <div class="form-group">
-        <label for="exampleFormControlTextarea1">Example textarea</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-    </div>
-    <label for="ouijerouleacc" class="pr-1">Est-ce que vous roulez déjà sur ACC?</label>
-    <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="ouijerouleacc" value="Oui">
+        <input class="form-check-input" type="radio" name="ouijerouleacc" id="ouijerouleacc" value="Oui">
         <label class="form-check-label" for="ouijerouleacc">Oui</label>
     </div>
-    <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="nonjeneroulepasacc" value="Non">
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="nonjeneroulepasacc" id="nonjeneroulepasacc" value="Non">
         <label class="form-check-label" for="nonjeneroulepasacc">Non</label>
+    </div>
+<!--------- Choix série ---------->
+    <p class="pt-3">Dans quelle série désiez-vous rouler?</p>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="GT3 Challenge Québec" id="gt3cq" value="GT3 Challenge Québec">
+        <label class="form-check-label" for="gt3cq">GT3 Challenge Québec</label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="GT3 Sprint Challenge Québec" id="gt3scq" value="GT3 Sprint Challenge Québec">
+        <label class="form-check-label" for="gt3scq">GT3 Sprint Challenge Québec</label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="GT Cup Challenge Québec" id="gtccq" value="GT Cup Challenge Québec">
+        <label class="form-check-label" for="gtccq">GT Cup Challenge Québec</label>
+    </div>
+<!--------- Choix numéro ---------->
+    <div class="form-group pt-3">
+        <label for="formnumero">Choix du numéro</label>
+        <input type="number" class="form-control" id="formnumero" placeholder="Entrez les numéros que vous aimeriez utiliser en course.">
+    </div>
+<!--------- Choix équipe ---------->
+    <div class="form-group">
+        <label for="formequipe">Choix du nom d'équipe</label>
+        <input type="text" class="form-control" id="formequipe" placeholder="Entrez le nom de votre équipe si vous en avez une.">
     </div>
 </form>
 
-
+<footer class="footer mt-auto py-3">
+    <div class="container">
+        <span class="text-white">Pour nous contacter : <A HREF="mailto:julienh.simracer@gmail.com">julienh.simracer@gmail.com</A> - 418-264-9400</span>
+    </div>
+</footer>
 <script src="https://kit.fontawesome.com/a46d75ba7a.js"></script>
 <script src="Bootstrap/jquery-3.4.1.min.js"></script>
 <script src="Bootstrap/js/bootstrap.js"></script>
