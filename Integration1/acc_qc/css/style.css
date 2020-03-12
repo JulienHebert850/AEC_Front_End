@@ -48,3 +48,7 @@ header .overlay {
 .footer {
     background-color: gray;
 }
+
+.wrap-class-one {
+    background-color: blue;
+}
