@@ -40,14 +40,14 @@
     <div class="collapse navbar-collapse" id="navbarNav">
 
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item"><a class="nav-link" href="#section1">Championnats</a></li>
+            <li class="nav-item"><a class="nav-link" href="#section1">Séries</a></li>
             <li class="nav-item"><a class="nav-link" href="#section2">Voitures</a></li>
             <li class="nav-item"><a class="nav-link" href="#section3">Pistes</a></li>
             <li class="nav-item"><a class="nav-link" href="#section4">Calendrier</a></li>
             <li class="nav-item"><a class="nav-link" href="#section5">Équipement</a></li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Ressources
+                    Ressources externes
                 </a>
                 <div class="dropdown-menu" aria-labelledby="Ressources">
                     <a class="dropdown-item" href="https://www.assettocorsa.net/competizione" target="_blank">Site Web ACC</a>
@@ -74,8 +74,8 @@
     <div class="container">
         <div class="row text-center align-items-center">
             <div class="col-12 text-white pt-5">
-                <h1 class="display-2 mt-5 pt-5">Assetto Corsa Competizione Québec</h1>
-                <p class="lead mb-0 pt-3">Vous cherchez une ligue québécoise sur Assetto Corsa Competizione ou vous pouvez rouler compétitivement et progresser dans un championnat? Vous êtes à la bonne place!</p>
+                <h1 class="display-4 mt-3 pt-3">Assetto Corsa Competizione Québec</h1>
+                <p class="lead pt-3">Vous cherchez une ligue québécoise sur Assetto Corsa Competizione ou vous pouvez rouler compétitivement et progresser dans un championnat? Vous êtes à la bonne place!</p>
             </div>
         </div>
     </div>
@@ -86,31 +86,567 @@
 <div id="section1" class="container-fluid px-1 mx-0">
     <div class="row no-gutters d-flex text-center justify-content-center justify-content-md-center justify-content-sm-center pt-5">
         <div class="col-lg-12 col-md-12 col-sm-12">
-            <h1>Les championnats</h1>
+            <h2 class="display-4">Les séries</h2>
         </div>
     </div>
 
     <div class="row no-gutters d-flex justify-content-center text-center">
 
         <div class="col-xl-4 col-lg-6 col-md-12 col-sm-12 py-5">
-                <h5 class="card-title">GT3 Challenge Québec</h5>
+                <h5 class="card-title">GT Challenge Québec</h5>
                 <img src="img/Voitures/BentleyContinentalGT32018-1-compressor.jpg" width="75%" class="img-fluid justify-content-center" alt="GT3ChallengeQuebec">
                 <p class="card-text py-3 px-3 mx-3">Un championnat bi-mensuel de voitures GT3 comptant 10 courses sprint de 45 minutes se déroulant le vendredi soir.</p>
-                <a href="#" class="btn btn-outline-success">Plus d'informations<br>(À venir)</a>
+                <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#modalgtchqc">Info et Calendrier</button>
+                    <div class="modal fade" id="modalgtchqc" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">GT Challenge Québec</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Le championnat principal est le “GT Challenge Québec” qui compte 10 courses de type “Sprint” de 45 minutes.
+                                        Les 8 meilleurs résultats sont compilés pour faire le classement final. Le championnat se déroule de façon
+                                        bi-hebdomadaire le vendredi soir. La saison débutera durant la semaine du 16 mars avec des épreuves de
+                                        qualifications pour déterminer les classes des pilotes et la première course aura lieu vendredi le 27 mars.
+                                        Les arrêts aux puits des courses permettent uniquement pour remplacer les pneus à la mi-course durant une fenêtre
+                                        de 10 minutes annoncée par le spotter et un message textuel pendant la course. Les arrêts qui seront effectués
+                                        avant et/ou après seront passible d’une pénalité à la fin de la course.</p>
+                                    <img class="img-fluid zoom py-5" src="img/calendriers/Circuits---GT-Callenge-Saison-1---2020-compressor.jpg" alt="Calendrier GT Challenge Québec"/>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#modalresgtchqc">Résultats</button>
+            <div class="modal fade" id="modalresgtchqc" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">GT Challenge Québec</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container-fluid justify-content-center">
+                                <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <table class="table table-hover table-sm">
+                                        <thead class="thead-dark">
+                                        <tr>
+                                            <th scope="col">Position</th>
+                                            <th scope="col">Points</th>
+                                            <th scope="col">Pilote</th>
+                                            <th scope="col">Voiture</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr class="gold">
+                                            <th scope="row">1</th>
+                                            <td>92</td>
+                                            <td>Raphael Guedon</td>
+                                            <td>Ferrari 488 GT3</td>
+                                        </tr>
+                                        <tr class="silver">
+                                            <th scope="row">2</th>
+                                            <td>86</td>
+                                            <td>Nikolas Dubois</td>
+                                            <td>Porsche 911 GT3R</td>
+                                        </tr>
+                                        <tr class="bronze">
+                                            <th scope="row">3</th>
+                                            <td>75</td>
+                                            <td>Danick Van Daele</td>
+                                            <td>Ferrari 488 GT3</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">4</th>
+                                            <td>64</td>
+                                            <td>Danick Van Daele</td>
+                                            <td>Ferrari 488 GT3</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">5</th>
+                                            <td>50</td>
+                                            <td>Danick Van Daele</td>
+                                            <td>Ferrari 488 GT3</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">6</th>
+                                            <td>38</td>
+                                            <td>Danick Van Daele</td>
+                                            <td>Ferrari 488 GT3</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">7</th>
+                                            <td>35</td>
+                                            <td>Danick Van Daele</td>
+                                            <td>Ferrari 488 GT3</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">8</th>
+                                            <td>29</td>
+                                            <td>Danick Van Daele</td>
+                                            <td>Ferrari 488 GT3</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">9</th>
+                                            <td>22</td>
+                                            <td>Danick Van Daele</td>
+                                            <td>Ferrari 488 GT3</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">10</th>
+                                            <td>18</td>
+                                            <td>Danick Van Daele</td>
+                                            <td>Ferrari 488 GT3</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">11</th>
+                                            <td>15</td>
+                                            <td>Danick Van Daele</td>
+                                            <td>Ferrari 488 GT3</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">12</th>
+                                            <td>6</td>
+                                            <td>Danick Van Daele</td>
+                                            <td>Ferrari 488 GT3</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">13</th>
+                                            <td>2</td>
+                                            <td>Danick Van Daele</td>
+                                            <td>Ferrari 488 GT3</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">14</th>
+                                            <td>0</td>
+                                            <td>Danick Van Daele</td>
+                                            <td>Ferrari 488 GT3</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">15</th>
+                                            <td>0</td>
+                                            <td>Danick Van Daele</td>
+                                            <td>Ferrari 488 GT3</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">16</th>
+                                            <td>0</td>
+                                            <td>Danick Van Daele</td>
+                                            <td>Ferrari 488 GT3</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">17</th>
+                                            <td>0</td>
+                                            <td>Danick Van Daele</td>
+                                            <td>Ferrari 488 GT3</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">18</th>
+                                            <td>0</td>
+                                            <td>Danick Van Daele</td>
+                                            <td>Ferrari 488 GT3</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">19</th>
+                                            <td>0</td>
+                                            <td>Danick Van Daele</td>
+                                            <td>Ferrari 488 GT3</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">20</th>
+                                            <td>0</td>
+                                            <td>Danick Van Daele</td>
+                                            <td>Ferrari 488 GT3</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div class="col-xl-4 col-lg-6 col-md-12 col-sm-12 py-5">
-                <h5 class="card-title">GT3 Sprint Challenge Québec</h5>
+                <h5 class="card-title">GT Sprint Challenge Québec</h5>
                 <img src="img/Voitures/Porsche911GT3R-1-compressor.jpg" width="75%" class="img-fluid" alt="GT3SprintQuebec">
                 <p class="card-text py-3 px-3 mx-3">Un championnat hebdomadaire de voitures GT3 comptant 14 courses sprint de 25 minutes se déroulant le dimanche soir.</p>
-                <a href="#" class="btn btn-outline-warning">Plus d'informations<br>(À venir)</a>
+            <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#modalgtspqc">Info et Calendrier</button>
+            <div class="modal fade" id="modalgtspqc" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">GT Sprint Challenge Québec</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Le deuxième championnat est le “GT Sprint Challenge Québec”  qui compte 14 courses de 25 minutes et qui se
+                                déroule de façon hebdomadaire le dimanche soir. Les 11 meilleurs résultats sont compilés pour faire le classement
+                                final. Les voitures utilisées sont les mêmes que la série GT Challenge Québec de type GT3, seul le format des courses
+                                et le calendrier sont différents.</p>
+                            <img class="img-fluid zoom py-5" src="img/calendriers/Circuits---GT-Sprint-Saison-1---2020-compressor.jpg" alt="Calendrier GT Sprint Challenge Québec"/>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#modalresgtspqc">Résultats</button>
+            <div class="modal fade" id="modalresgtspqc" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">GT Sprint Challenge Québec</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container-fluid justify-content-center px-5">
+                                <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <table class="table table-hover table-sm">
+                                        <thead class="thead-dark">
+                                        <tr>
+                                            <th scope="col">Position</th>
+                                            <th scope="col">Points</th>
+                                            <th scope="col">Pilote</th>
+                                            <th scope="col">Voiture</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr class="gold">
+                                            <th scope="row">1</th>
+                                            <td>92</td>
+                                            <td>Raphael Guedon</td>
+                                            <td>Ferrari 488 GT3</td>
+                                        </tr>
+                                        <tr class="silver">
+                                            <th scope="row">2</th>
+                                            <td>86</td>
+                                            <td>Nikolas Dubois</td>
+                                            <td>Porsche 911 GT3R</td>
+                                        </tr>
+                                        <tr class="bronze">
+                                            <th scope="row">3</th>
+                                            <td>75</td>
+                                            <td>Danick Van Daele</td>
+                                            <td>Ferrari 488 GT3</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">4</th>
+                                            <td>64</td>
+                                            <td>Danick Van Daele</td>
+                                            <td>Ferrari 488 GT3</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">5</th>
+                                            <td>50</td>
+                                            <td>Danick Van Daele</td>
+                                            <td>Ferrari 488 GT3</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">6</th>
+                                            <td>38</td>
+                                            <td>Danick Van Daele</td>
+                                            <td>Ferrari 488 GT3</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">7</th>
+                                            <td>35</td>
+                                            <td>Danick Van Daele</td>
+                                            <td>Ferrari 488 GT3</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">8</th>
+                                            <td>29</td>
+                                            <td>Danick Van Daele</td>
+                                            <td>Ferrari 488 GT3</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">9</th>
+                                            <td>22</td>
+                                            <td>Danick Van Daele</td>
+                                            <td>Ferrari 488 GT3</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">10</th>
+                                            <td>18</td>
+                                            <td>Danick Van Daele</td>
+                                            <td>Ferrari 488 GT3</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">11</th>
+                                            <td>15</td>
+                                            <td>Danick Van Daele</td>
+                                            <td>Ferrari 488 GT3</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">12</th>
+                                            <td>6</td>
+                                            <td>Danick Van Daele</td>
+                                            <td>Ferrari 488 GT3</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">13</th>
+                                            <td>2</td>
+                                            <td>Danick Van Daele</td>
+                                            <td>Ferrari 488 GT3</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">14</th>
+                                            <td>0</td>
+                                            <td>Danick Van Daele</td>
+                                            <td>Ferrari 488 GT3</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">15</th>
+                                            <td>0</td>
+                                            <td>Danick Van Daele</td>
+                                            <td>Ferrari 488 GT3</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">16</th>
+                                            <td>0</td>
+                                            <td>Danick Van Daele</td>
+                                            <td>Ferrari 488 GT3</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">17</th>
+                                            <td>0</td>
+                                            <td>Danick Van Daele</td>
+                                            <td>Ferrari 488 GT3</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">18</th>
+                                            <td>0</td>
+                                            <td>Danick Van Daele</td>
+                                            <td>Ferrari 488 GT3</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">19</th>
+                                            <td>0</td>
+                                            <td>Danick Van Daele</td>
+                                            <td>Ferrari 488 GT3</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">20</th>
+                                            <td>0</td>
+                                            <td>Danick Van Daele</td>
+                                            <td>Ferrari 488 GT3</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div class="col-xl-4 col-lg-6 col-md-12 col-sm-12 py-5">
                 <h5 class="card-title">Super Trofeo Challenge Québec</h5>
                 <img src="img/Voitures/LamboHuracanSuperTrofeo-1-compressor%20(1).jpg" width="75%" class="img-fluid" alt="GTCupQuebec">
                 <p class="card-text py-3 px-3 mx-3">Un championnat hebdomadaire de voitures monotype comptant 14 courses sprint de 30 minutes se déroulant le mercredi soir.</p>
-                <a href="#" class="btn btn-outline-danger">Plus d'informations<br>(À venir)</a>
+            <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#modalstchqc">Info et Calendrier</button>
+            <div class="modal fade" id="modalstchqc" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Super Trofeo Challenge Québec</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Le troisième championnat est le “Super Trofeo Challenge Québec” compte 14 courses de 30 minutes et se déroule de façon
+                                hebdomadaire le mercredi soir. Les 11 meilleurs résultats sont compilés pour faire le classement final. Il s’agit
+                                d’une série de voitures monotype, donc chaque pilote utilise la même voiture mais peut changer certains ajustements
+                                selon ses préférences. Pour la première saison nous allons utiliser la Lamborghini Huracan Super Trofeo, plus
+                                puissante qu’une voiture GT3 traditionnelle, mais sa vitesse de pointe est limitée électroniquement et elle possède
+                                moins d’appui aérodynamique, c’est une voiture qui pardonne un peu plus les erreurs. Les arrêts aux puits ne sont
+                                pas permis sauf pour les réparations et le niveau d’essence est fixe. Les pilotes auront donc à gérer l’usure de
+                                leur pneus pour éviter de terminer la course avec des pneus finis.</p>
+                            <img class="img-fluid zoom py-5" src="img/calendriers/Circuits---ST-Cup-Saison-1---2020-compressor.jpg" alt="Calendrier Super Trofeo Challenge Québec"/>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#modalresstchqc">Résultats</button>
+            <div class="modal fade" id="modalresstchqc" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Super Trofeo Challenge Québec</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container-fluid justify-content-center px-5">
+                                <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <table class="table table-hover table-sm">
+                                        <thead class="thead-dark">
+                                        <tr>
+                                            <th scope="col">Position</th>
+                                            <th scope="col">Points</th>
+                                            <th scope="col">Pilote</th>
+                                            <th scope="col">Voiture</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr class="gold">
+                                            <th scope="row">1</th>
+                                            <td>92</td>
+                                            <td>Raphael Guedon</td>
+                                            <td>Ferrari 488 GT3</td>
+                                        </tr>
+                                        <tr class="silver">
+                                            <th scope="row">2</th>
+                                            <td>86</td>
+                                            <td>Nikolas Dubois</td>
+                                            <td>Porsche 911 GT3R</td>
+                                        </tr>
+                                        <tr class="bronze">
+                                            <th scope="row">3</th>
+                                            <td>75</td>
+                                            <td>Danick Van Daele</td>
+                                            <td>Ferrari 488 GT3</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">4</th>
+                                            <td>64</td>
+                                            <td>Danick Van Daele</td>
+                                            <td>Ferrari 488 GT3</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">5</th>
+                                            <td>50</td>
+                                            <td>Danick Van Daele</td>
+                                            <td>Ferrari 488 GT3</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">6</th>
+                                            <td>38</td>
+                                            <td>Danick Van Daele</td>
+                                            <td>Ferrari 488 GT3</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">7</th>
+                                            <td>35</td>
+                                            <td>Danick Van Daele</td>
+                                            <td>Ferrari 488 GT3</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">8</th>
+                                            <td>29</td>
+                                            <td>Danick Van Daele</td>
+                                            <td>Ferrari 488 GT3</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">9</th>
+                                            <td>22</td>
+                                            <td>Danick Van Daele</td>
+                                            <td>Ferrari 488 GT3</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">10</th>
+                                            <td>18</td>
+                                            <td>Danick Van Daele</td>
+                                            <td>Ferrari 488 GT3</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">11</th>
+                                            <td>15</td>
+                                            <td>Danick Van Daele</td>
+                                            <td>Ferrari 488 GT3</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">12</th>
+                                            <td>6</td>
+                                            <td>Danick Van Daele</td>
+                                            <td>Ferrari 488 GT3</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">13</th>
+                                            <td>2</td>
+                                            <td>Danick Van Daele</td>
+                                            <td>Ferrari 488 GT3</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">14</th>
+                                            <td>0</td>
+                                            <td>Danick Van Daele</td>
+                                            <td>Ferrari 488 GT3</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">15</th>
+                                            <td>0</td>
+                                            <td>Danick Van Daele</td>
+                                            <td>Ferrari 488 GT3</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">16</th>
+                                            <td>0</td>
+                                            <td>Danick Van Daele</td>
+                                            <td>Ferrari 488 GT3</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">17</th>
+                                            <td>0</td>
+                                            <td>Danick Van Daele</td>
+                                            <td>Ferrari 488 GT3</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">18</th>
+                                            <td>0</td>
+                                            <td>Danick Van Daele</td>
+                                            <td>Ferrari 488 GT3</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">19</th>
+                                            <td>0</td>
+                                            <td>Danick Van Daele</td>
+                                            <td>Ferrari 488 GT3</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">20</th>
+                                            <td>0</td>
+                                            <td>Danick Van Daele</td>
+                                            <td>Ferrari 488 GT3</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </div>
@@ -121,7 +657,7 @@
 <div id="section2" class="container-fluid px-0 mx-0">
     <div class="row no-gutters d-flex text-center justify-content-center pt-2">
         <div class="col-lg-12 col-md-12 col-sm-12">
-            <h2>Les voitures</h2>
+            <h2 class="display-4">Les voitures</h2>
         </div>
     </div>
 </div>
@@ -422,7 +958,7 @@
 <div id="section3" class="container-fluid px-0 mx-0">
     <div class="row no-gutters d-flex text-center justify-content-center pt-5">
         <div class="col-lg-12 col-md-12 col-sm-12">
-            <h2>Les pistes</h2>
+            <h2 class="display-4">Les pistes</h2>
         </div>
     </div>
 </div>
@@ -546,26 +1082,24 @@
 <div id="section4" class="container-fluid px-0 mx-0">
     <div class="row no-gutters d-flex text-center justify-content-center py-5">
         <div class="col-lg-12 col-md-12 col-sm-12">
-            <h2>Le calendrier</h2>
+            <h2 class="display-4">Le calendrier</h2>
         </div>
     </div>
 </div>
 
-<div class="container-fluid px-0 mx-0">
+<div class="container-fluid px-5 ">
     <div class="row no-gutters d-flex text-center justify-content-center img-fluid py-5">
-        <div class="col-lg-12">
-            <img src="img/calendriers/Calendrier_Officiel_ACC_qc_-_Saison_1_-_2020.jpg" alt="calendrieraccqcsaison12020" width=50%/></div>
+        <div class="col-lg-8">
+            <img src="img/calendriers/Calendrier_Officiel_ACC_qc_-_Saison_1_-_2020.jpg" alt="calendrieraccqcsaison12020" class="img-fluid"/></div>
     </div>
 </div>
-
-
 
 <!--Équipement requis--------------------------------------------------------------------------------------------------------------->
 
 <div id="section5" class="container-fluid px-0 mx-0">
     <div class="row no-gutters d-flex text-center justify-content-center py-5">
         <div class="col-lg-12 col-md-12 col-sm-12">
-            <h2>L'équipement requis</h2>
+            <h2 class="display-4">L'équipement requis</h2>
         </div>
     </div>
 </div>
@@ -576,7 +1110,7 @@
             <a href="https://store.steampowered.com/app/805550/Assetto_Corsa_Competizione/" target="_blank">
             <i class="fab fa-steam fa-3x pb-3"></i>
             <h2>Assetto Corsa<br> Competizione</h2>
-            <p>40$ + 20$ DLC IGTC</p>
+            <p>ACC + DLC = 63$</p>
         </a>
         </div>
         <div class="col-lg-4 col-md-6 col-sm-12 pb-3">

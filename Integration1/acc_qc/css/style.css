@@ -52,3 +52,28 @@ header .overlay {
 .wrap-class-one {
     background-color: blue;
 }
+
+.zoomBOut {
+    width: 600px;
+    height: 338px;
+    overflow: hidden;
+    position: relative;
+}
+
+.zoom:hover{
+    transform: scale(1.2);
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+
+.gold{
+    background-color: gold;
+}
+
+.silver{
+    background-color: silver;
+}
+
+.bronze{
+    background-color: darkorange;
+}
