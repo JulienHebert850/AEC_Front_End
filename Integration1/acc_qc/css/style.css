@@ -1,10 +1,3 @@
-body{
-    margin-left: 0;
-    margin-right: 0;
-    padding-left: 0;
-    padding-right: 0;
-}
-
 header {
     position: relative;
     background-color : black;
@@ -49,19 +42,8 @@ header .overlay {
     background-color: gray;
 }
 
-.wrap-class-one {
-    background-color: blue;
-}
-
-.zoomBOut {
-    width: 600px;
-    height: 338px;
-    overflow: hidden;
-    position: relative;
-}
-
 .zoom:hover{
-    transform: scale(1.2);
+    transform: scale(1.3);
     transition-duration: 1s;
     transition-timing-function: ease;
 }
@@ -76,4 +58,22 @@ header .overlay {
 
 .bronze{
     background-color: darkorange;
+}
+
+@font-face {
+    font-family: "Concielian Bold";
+    src: url(../font/concielianboldital.ttf);
+}
+
+h1, h2, h3, h5{
+    font-family: "Concielian Bold";
+}
+
+@font-face {
+    font-family: "P";
+    src: url(../font/Prime-Regular.ttf);
+}
+
+p{
+    font-family: "P";
 }
