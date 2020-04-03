@@ -1,0 +1,822 @@
+<!-- Par Julien Hebert -->
+<!DOCTYPE html>
+<html lang="fr-ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Projet Personnel</title>
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<header>
+<!-- NavBar -->
+<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark pl-3 pr-0 mx-0">
+    <a class="navbar-brand" href="#">ACC QC</a>
+    <button class="navbar-toggler toggler-example purple darken-3" type="button" data-toggle="collapse"
+            data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+            aria-label="Toggle navigation"><span class="white-text"><i class="fas fa-car fa-1x"></i></span></button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active"><a class="nav-link" href="index.html">Accueil<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="voitures.html">Voitures</a></li>
+            <li class="nav-item"><a class="nav-link" href="pistes.html">Pistes</a></li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Ressources externes
+                </a>
+                <div class="dropdown-menu" aria-labelledby="Ressources">
+                    <a class="dropdown-item" href="https://www.assettocorsa.net/competizione" target="_blank">Site Web ACC</a>
+                    <a class="dropdown-item" href="https://www.assettocorsa.net/forum/index.php#assetto-corsa-competizione.60" target="_blank">Forums ACC</a>
+                    <a class="dropdown-item" href="https://sro-esport.com/" target="_blank">SRO E-Sports</a>
+                </div>
+        </ul>
+
+        <span class="navbar-brand"><a class="nav-link" href="https://www.facebook.com/accqc/" target="_blank"><i class="fab fa-facebook"></i></a></span>
+        <!--<span class="navbar-brand"><a class="nav-link" href="https://www.youtube.com/UCRlbt6ul3iydP1Z8qAkuDpw" target="_blank"><i class="fab fa-youtube"></i></a></span>-->
+        <!--<span class="navbar-brand"><a class="nav-link" href="https://www.twitch.tv/gtchallengequebec" target="_blank"><i class="fab fa-twitch"></i></a></span>-->
+        <span class="navbar-brand"><a class="nav-link" href="https://discord.gg/DMhH7Hq" target="_blank"><i class="fab fa-discord"></i></a></span>
+    </div>
+</nav>
+
+<!-- Video Background Header -->
+
+    <div class="overlay"></div>
+    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+        <source src="https://i.imgur.com/GQeAoOR.mp4"
+                type="video/mp4">
+    </video>
+    <div class="container">
+        <div class="row text-center align-items-center">
+            <div class="col-12 text-white pt-5">
+                <h1 class="display-4 mt-3 pt-3">Assetto Corsa Competizione Québec</h1>
+                <p class="lead pt-3">Vous cherchez une ligue québécoise sur Assetto Corsa Competizione où vous pouvez rouler compétitivement et progresser dans un championnat? Vous êtes au bon endroit!</p>
+            </div>
+        </div>
+    </div>
+</header>
+
+<body>
+<!--Championnats------------------------------------------------------------------------------------------------------------- -->
+<section class="championnat">
+<div class="container-fluid px-1 mx-0">
+    <div class="row no-gutters d-flex text-center justify-content-center justify-content-md-center justify-content-sm-center pt-5">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+            <h1>Les séries</h1>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 pt-5">
+            <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#modalcalaccqc">Calendrier Général</button>
+            <div class="modal fade" id="modalcalaccqc" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Calendrier Général</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <img class="img-fluid zoom" src="img/calendriers/Calendrier_Officiel_ACC_qc_-_Saison_1_-_2020.jpg" alt="Calendrier ACC QC"/>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 pt-5">
+            <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#modalreglesaccqc">Réglementations</button>
+            <div class="modal fade" id="modalreglesaccqc" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Réglementations</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <dl>
+                                <dt>Le Respect</dt>
+                                <dd>Le respect entre pilotes est primordial et tout contact entre les voitures doit être évité dans la mesure du possible. Nous sommes conscient qu’un contact accidentel peut se produire de temps à autres lors d’une bataille pour une position, mais toute personne causant des accidents de façon volontaire ou par sa conduite négligente recevra une/des pénalités et/ou sera disqualifié de la course et/ou de la série si on juge que c’est nécessaire.</dd>
+                                <dt>Limites de piste</dt>
+                                <dd>Les limites de pistes doivent être respectées, sinon des pénalités peuvent vous être attribuées automatiquement par le simulateur dans le cas ou vous roulez trop souvent hors des limites. Profitez des séances de pratique pour les tester avant de vous lancer dans une course en ligne.</dd>
+                                <dt>Retour en piste</dt>
+                                <dd>En cas de sortie de piste, vous devez toujours rejoindre la piste de façon sécuritaire, même si cela implique que vous vous retrouvez dernier après avoir laissé passé toutes les autres voitures. Vous devez toujours rejoindre la piste en faisant le maximum pour ne pas couper la ligne de course. Vous devez revenir en piste en suivant la direction de la piste (n’entrez pas à 90 degré sur la piste).</dd>
+                                <dt>Les puits</dt>
+                                <dd>Les entrées et sorties des puits sont délimitées par une ligne blanche qui ne doit pas être coupée et c’est votre responsabilité de vous assurer que vous ne coupez pas le chemin d’un autre pilote qui est déjà en piste.</dd>
+                                <dt>Les manoeuvres interdites</dt>
+                                <dd>Les manoeuvres interdites : Les dépassements agressifs mettant en péril la course des autres pilotes,  les manoeuvres de défense excessives et les Bump-to-Pass. Les dépassements en virage ne sont pas interdits, mais même si ils sont spectaculaire, vous devriez toujours prévoir vos dépassements sur une ligne droite. C’est la manière la plus sécuritaire pour terminer vos courses.</dd>
+                                <dt>Drapeau bleu</dt>
+                                <dd>Dans le cas où vous recevez un drapeau bleu, la meilleure façon de laisser passer le/les pilotes plus rapides est de garder votre ligne de course et de lever le pied légèrement pour aider les voitures plus rapides à vous dépasser. Vous ne pouvez pas bloquer ou défendre votre position lorsque vous recevez un drapeau bleu.</dd>
+                                <dt>Les insultes</dt>
+                                <dd>Votre comportement est tout aussi important hors piste. Les insultes et guerres sur le Discord ou toute autre plateforme sociale ne sont pas permis.</dd>
+                            </dl>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row no-gutters d-flex justify-content-center text-center">
+
+        <div class="col-xl-4 col-lg-6 col-md-12 col-sm-12 py-5">
+            <h5 class="card-title">GT Challenge Québec</h5>
+            <img src="img/Voitures/BentleyContinentalGT32018-1-compressor.jpg" width="75%" class="img-fluid justify-content-center" alt="GT3ChallengeQuebec">
+            <p class="card-text py-3 px-3 mx-3">Un championnat bi-mensuel de voitures GT3 comptant 10 courses sprint de 45 minutes se déroulant le vendredi soir.</p>
+            <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#modalgtchqc">Info et Calendrier</button>
+            <div class="modal fade" id="modalgtchqc" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">GT Challenge Québec</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Le championnat principal est le “GT Challenge Québec” qui compte 10 courses de 45 minutes.
+                                Les 8 meilleurs résultats sont compilés pour faire le classement final. Le championnat se déroule de façon
+                                bi-hebdomadaire le vendredi soir. La première saison a lieu du 20 mars 2020 au 17 juillet 2020.
+                                Un arrêt aux puits est obligatoire pendant la course, mais les pilotes ne sont pas obligés de changer leurs pneus ou d'ajouter de l'essence.</p>
+                            <img class="img-fluid zoom py-5" src="img/calendriers/Circuits---GT-Callenge-Saison-1---2020-compressor.jpg" alt="Calendrier GT Challenge Québec"/>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#modalresgtchqc">Classement</button>
+            <div class="modal fade" id="modalresgtchqc" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Classement - GT Challenge Québec</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container-fluid justify-content-center px-3">
+                                <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <!-- Tableau Classement Pro-->
+                                    <h1>Pro</h1>
+                                    <table class="table table-hover table-sm">
+                                        <thead class="thead-dark">
+                                        <tr>
+                                            <th scope="col">Position</th>
+                                            <th scope="col">Pilote</th>
+                                            <th scope="col">Voiture</th>
+                                            <th scope="col">Points</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr class="gold">
+                                            <th scope="row">1</th>
+                                            <td>M.-A. Thibault</td>
+                                            <td>Porsche 911II GT3R</td>
+                                            <td>25</td>
+                                        </tr>
+                                        <tr class="silver">
+                                            <th scope="row">2</th>
+                                            <td>I. Meskin</td>
+                                            <td>Ferrari 488 GT3</td>
+                                            <td>18</td>
+                                        </tr>
+                                        <tr class="bronze">
+                                            <th scope="row">3</th>
+                                            <td>R. Guedon</td>
+                                            <td>Ferrari 488 GT3</td>
+                                            <td>15</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">4</th>
+                                            <td>E. Kouame</td>
+                                            <td>Porsche 911II GT3R</td>
+                                            <td>12</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">5</th>
+                                            <td>G. Lafrenaye</td>
+                                            <td>Aston Martin Vantage V8</td>
+                                            <td>10</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">6</th>
+                                            <td>D. Bélanger</td>
+                                            <td>Porsche 991II GT3R</td>
+                                            <td>8</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">7</th>
+                                            <td>J.-F. Bilodeau</td>
+                                            <td>Bentley Continental GT3</td>
+                                            <td>6</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">8</th>
+                                            <td>L. Massé</td>
+                                            <td>Ferrari 488 GT3</td>
+                                            <td>4</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">9</th>
+                                            <td>J. Huard</td>
+                                            <td>Porsche 911II GT3R</td>
+                                            <td>2</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">10</th>
+                                            <td>D. Van Daele</td>
+                                            <td>Ferrari 488 GT3</td>
+                                            <td>1</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">11</th>
+                                            <td>N. Dubois</td>
+                                            <td>Porsche 911II GT3R</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">12</th>
+                                            <td>F. Fortin</td>
+                                            <td>Lamborghini Huracan GT3 Evo</td>
+                                            <td>0</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                    <!-- Tableau Classement Pro-Am -->
+                                    <h1>Pro-Am</h1>
+                                    <table class="table table-hover table-sm">
+                                        <thead class="thead-dark">
+                                        <tr>
+                                            <th scope="col">Position</th>
+                                            <th scope="col">Pilote</th>
+                                            <th scope="col">Voiture</th>
+                                            <th scope="col">Points</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr class="gold">
+                                            <th scope="row">1</th>
+                                            <td>S. Martin</td>
+                                            <td>Ferrari 488 GT3</td>
+                                            <td>25</td>
+                                        </tr>
+                                        <tr class="silver">
+                                            <th scope="row">2</th>
+                                            <td>J.-L. Deschênes</td>
+                                            <td>Honda NSX Evo 2019</td>
+                                            <td>18</td>
+                                        </tr>
+                                        <tr class="bronze">
+                                            <th scope="row">3</th>
+                                            <td>J. Hébert</td>
+                                            <td>Lexus RC F GT3</td>
+                                            <td>15</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">4</th>
+                                            <td>F. Durand</td>
+                                            <td>Audi R8 LMS Evo 2019</td>
+                                            <td>12</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">5</th>
+                                            <td>S.-J. Laurin</td>
+                                            <td>Lexus RC F GT3</td>
+                                            <td>10</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">6</th>
+                                            <td>M. Lacosta</td>
+                                            <td>BMW M6 GT3</td>
+                                            <td>8</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">7</th>
+                                            <td>P. Binette</td>
+                                            <td>Jaguar G3 GT3</td>
+                                            <td>6</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">8</th>
+                                            <td>A. Leon</td>
+                                            <td>Ferrari 488 GT3</td>
+                                            <td>4</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">9</th>
+                                            <td>S. Vaillancourt</td>
+                                            <td>Porsche 911II GT3R</td>
+                                            <td>2</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">10</th>
+                                            <td>S. Dubé</td>
+                                            <td>Audi R8 LMS Evo 2019</td>
+                                            <td>1</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xl-4 col-lg-6 col-md-12 col-sm-12 py-5">
+            <h5 class="card-title">GT Sprint Challenge Québec</h5>
+            <img src="img/Voitures/Porsche911GT3R-1-compressor.jpg" width="75%" class="img-fluid" alt="GT3SprintQuebec">
+            <p class="card-text py-3 px-3 mx-3">Un championnat hebdomadaire de voitures GT3 comptant 14 courses sprint de 25 minutes se déroulant le dimanche soir.</p>
+            <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#modalgtspqc">Info et Calendrier</button>
+            <div class="modal fade" id="modalgtspqc" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">GT Sprint Challenge Québec</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Le deuxième championnat est le “GT Sprint Challenge Québec” qui compte 14 courses de 25 minutes et qui se
+                                déroule de façon hebdomadaire le dimanche soir. Les 11 meilleurs résultats sont compilés pour faire le classement
+                                final. Les voitures utilisées sont les mêmes que la série GT Challenge Québec, seul le format des courses
+                                et le calendrier sont différents.</p>
+                            <img class="img-fluid zoom py-5" src="img/calendriers/Circuits---GT-Sprint-Saison-1---2020-compressor.jpg" alt="Calendrier GT Sprint Challenge Québec"/>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#modalresgtspqc">Classement</button>
+            <div class="modal fade" id="modalresgtspqc" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Classement - GT Sprint Challenge Québec</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container-fluid justify-content-center px-3">
+                                <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <!-- Tableau Classement Général -->
+                                    <h1>Général</h1>
+                                    <table class="table table-hover table-sm">
+                                        <thead class="thead-dark">
+                                        <tr>
+                                            <th scope="col">Position</th>
+                                            <th scope="col">Pilote</th>
+                                            <th scope="col">Points</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr class="gold">
+                                            <th scope="row">1</th>
+                                            <td>F. Fortin</td>
+                                            <td>25</td>
+                                        </tr>
+                                        <tr class="silver">
+                                            <th scope="row">2</th>
+                                            <td>S. Martin</td>
+                                            <td>18</td>
+                                        </tr>
+                                        <tr class="bronze">
+                                            <th scope="row">3</th>
+                                            <td>G. Lafrenaye</td>
+                                            <td>15</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">4</th>
+                                            <td>M. Lacosta</td>
+                                            <td>12</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">5</th>
+                                            <td>N. Dubois</td>
+                                            <td>10</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">6</th>
+                                            <td>J.-L. Deschênes</td>
+                                            <td>8</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">7</th>
+                                            <td>D. Bélanger</td>
+                                            <td>6</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">8</th>
+                                            <td>F. Durand</td>
+                                            <td>4</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">9</th>
+                                            <td>Sylvain-J. Laurin</td>
+                                            <td>2</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">10</th>
+                                            <td>J.-F. Bilodeau</td>
+                                            <td>1</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">11</th>
+                                            <td>A. Leon</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">12</th>
+                                            <td>Danick Van Daele</td>
+                                            <td>0</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xl-4 col-lg-6 col-md-12 col-sm-12 py-5">
+            <h5 class="card-title">Super Trofeo Challenge Québec</h5>
+            <img src="img/Voitures/LamboHuracanSuperTrofeo-1-compressor%20(1).jpg" width="75%" class="img-fluid" alt="GTCupQuebec">
+            <p class="card-text py-3 px-3 mx-3">Un championnat hebdomadaire de voitures monotype comptant 14 courses sprint de 30 minutes se déroulant le mercredi soir.</p>
+            <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#modalstchqc">Info et Calendrier</button>
+            <div class="modal fade" id="modalstchqc" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Super Trofeo Challenge Québec</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Le troisième championnat est le “Super Trofeo Challenge Québec” compte 14 courses de 30 minutes et se déroule de façon
+                                hebdomadaire le mercredi soir. Les 11 meilleurs résultats sont compilés pour faire le classement final. Il s’agit
+                                d’une série de voitures monotype, chaque pilote utilise la même voiture, mais il est libre de faire certains ajustements
+                                selon ses préférences. Pour la première saison nous allons utiliser la Lamborghini Huracan Super Trofeo, plus
+                                puissante qu’une voiture GT3 traditionnelle, mais sa vitesse de pointe est limitée électroniquement et elle possède
+                                moins d’appui aérodynamique, c’est une voiture qui pardonne un peu plus les erreurs. Les arrêts aux puits ne sont
+                                pas permis sauf pour les réparations, les pilotes doivent donc à gérer l’usure de
+                                leur pneus pour éviter de terminer la course avec des pneus finis.</p>
+                            <img class="img-fluid zoom py-5" src="img/calendriers/Circuits---ST-Cup-Saison-1---2020-compressor.jpg" alt="Calendrier Super Trofeo Challenge Québec"/>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#modalresstchqc">Classement</button>
+            <div class="modal fade" id="modalresstchqc" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Classement - Super Trofeo Challenge Québec</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container-fluid justify-content-center px-3">
+                                <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <!-- Tableau Classement Général -->
+                                    <h1>Classement Général</h1>
+                                    <table class="table table-hover table-sm">
+                                        <thead class="thead-dark">
+                                        <tr>
+                                            <th scope="col">Position</th>
+                                            <th scope="col">Pilote</th>
+                                            <th scope="col">Points</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr class="gold">
+                                            <th scope="row">1</th>
+                                            <td>D. Van Daele</td>
+                                            <td>25</td>
+                                        </tr>
+                                        <tr class="silver">
+                                            <th scope="row">2</th>
+                                            <td>D. Bélanger</td>
+                                            <td>18</td>
+                                        </tr>
+                                        <tr class="bronze">
+                                            <th scope="row">3</th>
+                                            <td>G. Lafrenaye</td>
+                                            <td>15</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">4</th>
+                                            <td>L. Massé</td>
+                                            <td>12</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">5</th>
+                                            <td>J. Hébert</td>
+                                            <td>10</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">6</th>
+                                            <td>F. Durand</td>
+                                            <td>8</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">7</th>
+                                            <td>J.-L. Deschenes</td>
+                                            <td>6</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">8</th>
+                                            <td>N. Dubois</td>
+                                            <td>4</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">9</th>
+                                            <td>S. Martin</td>
+                                            <td>2</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">10</th>
+                                            <td>I. Meskin</td>
+                                            <td>1</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">11</th>
+                                            <td>F. Fortin</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">12</th>
+                                            <td>J.-F. Bilodeau</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">13</th>
+                                            <td>M. Lacosta</td>
+                                            <td>0</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+</section>
+
+<!--Hot Lap------------------------------------------------------------------------------------------------------------- -->
+<section class="hotlap">
+<div id="hotlap" class="container-fluid px-1 mx-0">
+    <div class="row no-gutters d-flex text-center justify-content-center pt-5">
+        <div class="col-lg-6 col-md-6 col-sm-6">
+            <h2>Super Trofeo Hot Lap Challenge</h2>
+            <p>Voici les derniers chronos à jour compétition amicale "Hot Lap" qui est en parallèle avec notre série Super Trofeo Challenge. Venez vous mesurez à nos pilotes les plus rapides en vous connectant sur nos serveurs! Le gagnant de ce challenge recevra gratuitement le prochain pack de contenu GT4 qui sera lancé sur ACC en Juin 2020. Ce pack ajoutera + de 10 voitures GT4 au simulateur!</p>
+        </div>
+    </div>
+
+    <div class="row no-gutters d-flex text-center justify-content-center py-3">
+        <div class="col-lg-6 col-md-6 col-sm-6">
+            <h3>Top 5 Kyalami</h3>
+            <p>2020-03-18 à 2020-03-25<br>Dernière mise à jour 2020-03-24</p>
+        </div>
+    </div>
+
+    <div class="row no-gutters d-flex text-center justify-content-center pb-4">
+        <div class="col-lg-6 col-md-6 col-sm-6">
+            <table class="table table-hover table-sm">
+                <thead class="thead-dark">
+                <tr>
+                    <th scope="col">Position</th>
+                    <th scope="col">Meilleur Temps</th>
+                    <th scope="col">Pilote</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr class="gold">
+                    <th scope="row">1</th>
+                    <td>1:46.461</td>
+                    <td>D. Bélanger</td>
+                </tr>
+                <tr class="silver">
+                    <th scope="row">2</th>
+                    <td>1:51.186</td>
+                    <td>N. Dubois</td>
+                </tr>
+                <tr class="bronze">
+                    <th scope="row">3</th>
+                    <td>1:51.555</td>
+                    <td>J.-L. Deschênes</td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>1:53.529</td>
+                    <td>M. Perreault</td>
+                </tr>
+                <tr>
+                    <th scope="row">5</th>
+                    <td>1:56.620</td>
+                    <td>D. Van Daele</td>
+                </tr>
+                </tbody>
+            </table>
+            <div class="row no-gutters d-flex text-center justify-content-center pb-4">
+                <div class="col-lg-6 col-md-6 col-sm-12 pt-5">
+                    <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#modalchotlapsupertrofeo">Afficher la suite</button>
+                    <div class="modal fade" id="modalchotlapsupertrofeo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Super Trofeo Hot Lap Challenge</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row no-gutters d-flex text-center justify-content-center pb-4">
+                                        <div class="col-lg-6 col-md-6 col-sm-6">
+                                            <table class="table table-hover table-sm">
+                                                <thead class="thead-dark">
+                                                <tr>
+                                                    <th scope="col">Position</th>
+                                                    <th scope="col">Meilleur Temps</th>
+                                                    <th scope="col">Pilote</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr class="gold">
+                                                    <th scope="row">1</th>
+                                                    <td>1:46.461</td>
+                                                    <td>D. Bélanger</td>
+                                                </tr>
+                                                <tr class="silver">
+                                                    <th scope="row">2</th>
+                                                    <td>1:51.186</td>
+                                                    <td>N. Dubois</td>
+                                                </tr>
+                                                <tr class="bronze">
+                                                    <th scope="row">3</th>
+                                                    <td>1:51.555</td>
+                                                    <td>J.-L. Deschênes</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">4</th>
+                                                    <td>1:53.529</td>
+                                                    <td>M. Perreault</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">5</th>
+                                                    <td>1:56.620</td>
+                                                    <td>D. Van Daele</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">6</th>
+                                                    <td>1:57.694</td>
+                                                    <td>M. Lacosta</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">7</th>
+                                                    <td>1:58.525</td>
+                                                    <td>J. Hébert</td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+<!--Équipement requis--------------------------------------------------------------------------------------------------------------->
+<section class="equipement">
+<div id="equipement" class="container-fluid px-0 mx-0">
+    <div class="row no-gutters d-flex text-center justify-content-center py-5">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+            <h2>L'équipement requis</h2>
+        </div>
+    </div>
+    <div class="container-fluid px-0 mx-0">
+        <div class="row no-gutters d-flex text-center justify-content-center py-3">
+            <div class="col-lg-4 col-md-6 col-sm-12 pb-3">
+                <i class="fab fa-steam fa-3x pb-3"></i>
+                <h2>Assetto Corsa Competizione</h2>
+                <p>Aucun abonnement nécessaire</p>
+                <button type="button" class="btn btn-outline-dark"><a href="https://store.steampowered.com/app/805550/Assetto_Corsa_Competizione/" target="_blank">ACC + DLC = 63$</a></button>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 pb-3">
+                <i class="fas fa-desktop fa-3x pb-3"></i>
+                <h2>L'ordinateur</h2>
+                <p>900$+</p>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12 pb-3">
+                <i class="fas fa-gamepad fa-3x pb-3"></i>
+                <h2>Volant et pédales</h2>
+                <button type="button" class="btn btn-outline-dark"><a href="https://www.apexv2r.com/collections/simulator-products/products/thrusmaster-tmx-pro" target="_blank">300$+</a></button>
+                <button type="button" class="btn btn-outline-dark"><a href="https://www.apexv2r.com/collections/simulator-products/products/ts-pc-racer" target="_blank">600$+</a></button>
+                <button type="button" class="btn btn-outline-dark"><a href="https://www.apexv2r.com/collections/simulator-products/products/thrustmaster-ts-xw-racer-w-sparco-p310-wheel" target="_blank">900$+</a></button>
+
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+<!--Formulaire--------------------------------------------------------------------------------------------------------------->
+<section class="formulaire">
+<div id="section8" class="container-fluid px-0 mx-0">
+    <div class="row no-gutters d-flex text-center justify-content-center py-5">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+            <h2>Contactez-nous</h2>
+        </div>
+    </div>
+    <div class="container-fluid px-0 mx-0">
+        <div class="row no-gutters d-flex text-center justify-content-center py-3">
+            <div class="col-lg-6 col-md-12 col-sm-12">
+                <form>
+                    <div class="form-group">
+                        <label for="formcourriel">Courriel</label>
+                        <input type="email" class="form-control" id="formcourriel" aria-describedby="emailHelp">
+                        <small id="emailHelp" class="form-text text-muted">Nous ne partagerons pas vos informations.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="formnom">Prénom et nom</label>
+                        <input type="text" class="form-control" id="formnom">
+                    </div>
+                    <div class="form-group">
+                        <label for="formmessage">Message</label>
+                        <textarea class="form-control" id="formmessage" rows="3"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Envoyer</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+<script src="https://kit.fontawesome.com/a46d75ba7a.js"></script>
+<script src="Bootstrap/jquery-3.4.1.min.js"></script>
+<script src="Bootstrap/js/bootstrap.js"></script>
+</body>
+
+<footer class="footer mt-auto py-3 px-0 mx-0">
+    <div class="container">
+        <span class="text-white">Pour nous contacter : <A HREF="mailto:julienh.simracer@gmail.com" target="_blank">julienh.simracer@gmail.com</A> <a href="equipe.html">Organisation</a></span>
+    </div>
+</footer>
+
+</html>

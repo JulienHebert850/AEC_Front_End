@@ -1,0 +1,310 @@
+<!-- Par Julien Hebert -->
+<!DOCTYPE html>
+<html lang="fr-ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Les voitures</title>
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<header>
+<!-- NavBar -->
+<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark pl-3 pr-0 mx-0">
+    <a class="navbar-brand" href="#">ACC QC</a>
+    <button class="navbar-toggler toggler-example purple darken-3" type="button" data-toggle="collapse"
+            data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+            aria-label="Toggle navigation"><span class="white-text"><i class="fas fa-car fa-1x"></i></span></button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+            <li class="nav-item active"><a class="nav-link" href="voitures.html">Voitures<span class="sr-only">(current)</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="pistes.html">Pistes</a></li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Ressources externes
+                </a>
+                <div class="dropdown-menu" aria-labelledby="Ressources">
+                    <a class="dropdown-item" href="https://www.assettocorsa.net/competizione" target="_blank">Site Web ACC</a>
+                    <a class="dropdown-item" href="https://www.assettocorsa.net/forum/index.php#assetto-corsa-competizione.60" target="_blank">Forums ACC</a>
+                    <a class="dropdown-item" href="https://sro-esport.com/" target="_blank">SRO E-Sports</a>
+                </div>
+        </ul>
+
+        <span class="navbar-brand"><a class="nav-link" href="https://www.facebook.com/accqc/" target="_blank"><i class="fab fa-facebook"></i></a></span>
+        <!--<span class="navbar-brand"><a class="nav-link" href="https://www.youtube.com/UCRlbt6ul3iydP1Z8qAkuDpw" target="_blank"><i class="fab fa-youtube"></i></a></span>-->
+        <!--<span class="navbar-brand"><a class="nav-link" href="https://www.twitch.tv/gtchallengequebec" target="_blank"><i class="fab fa-twitch"></i></a></span>-->
+        <span class="navbar-brand"><a class="nav-link" href="https://discord.gg/DMhH7Hq" target="_blank"><i class="fab fa-discord"></i></a></span>
+    </div>
+</nav>
+
+<!-- Parallax -->
+<div class="container-fluid parallax h-100">
+    <div class="row align-items-center text-center h-100">
+        <div class="col-12 text-white pt-5">
+            <h1 class="display-4 mt-3 pt-3">Assetto Corsa Competizione Québec</h1>
+            <p class="lead pt-3">Vous cherchez une ligue québécoise sur Assetto Corsa Competizione où vous pouvez rouler compétitivement et progresser dans un championnat? Vous êtes au bon endroit!</p>
+        </div>
+    </div>
+</div>
+</header>
+
+<body>
+<!--GT3------------------------------------------------------------------------------------------------------------- -->
+<section class="gt3">
+<div class="container-fluid py-4 px-5">
+    <div class="row no-gutters d-flex text-center justify-content-center">
+        <div class="col-lg-6 col-md-12 col-sm-12">
+            <h1>GT3</h1>
+            <h1>Les voitures</h1>
+            <p>Plusieurs choix de voitures s'offrent à vous sur ACC. Prenez le temps de bien faire l'essai de chacunes d'entre elles pour
+            trouver celle qui convient le mieux à votre style de pilotage.</p>
+
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#carouselvoitures">
+                Cliquez ici pour voir le choix des voitures.
+            </button>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="carouselvoitures" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+<div class="modal-dialog modal-dialog-scrollable modal-xl" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalScrollableTitle">Les voitures</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+
+            <div id="section4" class="container-fluid px-0 mx-0">
+                <div class="row no-gutters d-flex text-center justify-content-center pt-2">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <h2>Faites votre choix!</h2>
+                    </div>
+                </div>
+    <div class="container-fluid px-0 mx-0">
+        <div class="row no-gutters d-flex text-center justify-content-center pt-5">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <div id="voitures" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active justify-content-center">
+                            <h2>Aston Martin V8 GT3</h2>
+                            <img class="d-block w-100" src="img/Voitures/AstonMartinV8GT3-1-compressor.jpg" alt="AMRV8GT31">
+                        </div>
+                        <div class="carousel-item">
+                            <h2>Aston Martin V8 GT3</h2>
+                            <img class="d-block w-100" src="img/Voitures/AstonMartinV8GT3-2-compressor.jpg" alt="AMRV8GT32">
+                        </div>
+                        <div class="carousel-item">
+                            <h2>Aston Martin V12 GT3</h2>
+                            <img class="d-block w-100" src="img/Voitures/AstonMartinV12GT3-1-compressor.jpg" alt="AMRV12GT31">
+                        </div>
+                        <div class="carousel-item">
+                            <h2>Aston Martin V12 GT3</h2>
+                            <img class="d-block w-100" src="img/Voitures/AstonMartinV12GT3-2-compressor.jpg" alt="AMRV12GT32">
+                        </div>
+                        <div class="carousel-item">
+                            <h2>Audi R8 LMS GT3 Evo</h2>
+                            <img class="d-block w-100" src="img/Voitures/AudiR8LMSEvo-1-compressor.jpg" alt="R8LMSGT31">
+                        </div>
+                        <div class="carousel-item">
+                            <h2>Audi R8 LMS GT3 Evo</h2>
+                            <img class="d-block w-100" src="img/Voitures/AudiR8LMSEvo-2-compressor.jpg" alt="R8LMSGT32">
+                        </div>
+                        <div class="carousel-item">
+                            <h2>Bentley Continental GT3 2015</h2>
+                            <img class="d-block w-100" src="img/Voitures/BentleyContinentalGT32015-1-compressor.jpg" alt="ContGT31">
+                        </div>
+                        <div class="carousel-item">
+                            <h2>Bentley Continental GT3 2015</h2>
+                            <img class="d-block w-100" src="img/Voitures/BentleyContinentalGT32015-2-compressor.jpg" alt="ContGT32">
+                        </div>
+                        <div class="carousel-item">
+                            <h2>Bentley Continental GT3 2018</h2>
+                            <img class="d-block w-100" src="img/Voitures/BentleyContinentalGT32018-1-compressor.jpg" alt="ContGT3Evo1">
+                        </div>
+                        <div class="carousel-item">
+                            <h2>Bentley Continental GT3 2018</h2>
+                            <img class="d-block w-100" src="img/Voitures/BentleyContinentalGT32018-2-compressor.jpg" alt="ContGT3Evo2">
+                        </div>
+                        <div class="carousel-item">
+                            <h2>BMW M6 GT3</h2>
+                            <img class="d-block w-100" src="img/Voitures/BMWM6GT3-1-compressor.jpg" alt="M6GT31">
+                        </div>
+                        <div class="carousel-item">
+                            <h2>BMW M6 GT3</h2>
+                            <img class="d-block w-100" src="img/Voitures/BMWM6GT3-2-compressor.jpg" alt="M6G32">
+                        </div>
+                        <div class="carousel-item">
+                            <h2>Ferrari 488 GT3</h2>
+                            <img class="d-block w-100" src="img/Voitures/Ferrari488GT3-1-compressor.jpg" alt="F488GT31">
+                        </div>
+                        <div class="carousel-item">
+                            <h2>Ferrari 488 GT3</h2>
+                            <img class="d-block w-100" src="img/Voitures/Ferrari488GT3-2-compressor.jpg" alt="F488GT32">
+                        </div>
+                        <div class="carousel-item">
+                            <h2>Honda NSX GT3 Evo</h2>
+                            <img class="d-block w-100" src="img/Voitures/HondaNSXGT3Evo-1-compressor.jpg" alt="NSXGT3Evo1">
+                        </div>
+                        <div class="carousel-item">
+                            <h2>Honda NSX GT3 Evo</h2>
+                            <img class="d-block w-100" src="img/Voitures/HondaNSXGT3Evo-2-compressor.jpg" alt="NSXGT3Evo2">
+                        </div>
+                        <div class="carousel-item">
+                            <h2>Jaguar G3 GT3</h2>
+                            <img class="d-block w-100" src="img/Voitures/JaguarG3GT3-1-compressor.jpg" alt="JagG3GT31">
+                        </div>
+                        <div class="carousel-item">
+                            <h2>Jaguar G3 GT3</h2>
+                            <img class="d-block w-100" src="img/Voitures/JaguarG3GT3-2-compressor.jpg" alt="JagG3GT32">
+                        </div>
+                        <div class="carousel-item">
+                            <h2>Lamborghini Huracan GT3 Evo</h2>
+                            <img class="d-block w-100" src="img/Voitures/LamboHuracanGT3Evo-1-compressor.jpg" alt="HuracanGT3Evo1">
+                        </div>
+                        <div class="carousel-item">
+                            <h2>Lamborghini Huracan GT3 Evo</h2>
+                            <img class="d-block w-100" src="img/Voitures/LamboHuracanGT3Evo-2-compressor.jpg" alt="HuracanGT3Evo2">
+                        </div>
+                        <div class="carousel-item">
+                            <h2>Lexus RC-F GT3</h2>
+                            <img class="d-block w-100" src="img/Voitures/LexusRCFGT3-1-compressor.jpg" alt="RCFGT31">
+                        </div>
+                        <div class="carousel-item">
+                            <h2>Lexus RC-F GT3</h2>
+                            <img class="d-block w-100" src="img/Voitures/LexusRCFGT3-2-compressor.jpg" alt="RCFGT32">
+                        </div>
+                        <div class="carousel-item">
+                            <h2>McLaren 650S GT3</h2>
+                            <img class="d-block w-100" src="img/Voitures/McLaren620SGT3-1-compressor.jpg" alt="650SGT31">
+                        </div>
+                        <div class="carousel-item">
+                            <h2>McLaren 650S GT3</h2>
+                            <img class="d-block w-100" src="img/Voitures/McLaren620SGT3-2-compressor.jpg" alt="650SGT32">
+                        </div>
+                        <div class="carousel-item">
+                            <h2>McLaren 720S GT3</h2>
+                            <img class="d-block w-100" src="img/Voitures/McLaren720SGT3-1-compressor.jpg" alt="720SGT31">
+                        </div>
+                        <div class="carousel-item">
+                            <h2>McLaren 720S GT3</h2>
+                            <img class="d-block w-100" src="img/Voitures/McLaren720SGT3-2-compressor.jpg" alt="720SGT32">
+                        </div>
+                        <div class="carousel-item">
+                            <h2>Mercedes AMG GT3</h2>
+                            <img class="d-block w-100" src="img/Voitures/MercedesAMGGT3-1-compressor.jpg" alt="AMGGT31">
+                        </div>
+                        <div class="carousel-item">
+                            <h2>Mercedes AMG GT3</h2>
+                            <img class="d-block w-100" src="img/Voitures/MercedesAMGGT3-2-compressor.jpg" alt="AMGGT32">
+                        </div>
+                        <div class="carousel-item">
+                            <h2>Nissan Nismo GTR GT3 2018</h2>
+                            <img class="d-block w-100" src="img/Voitures/NismoGTRGT32018-1-compressor.jpg" alt="GTRGT31">
+                        </div>
+                        <div class="carousel-item">
+                            <h2>Nissan Nismo GTR GT3 2018</h2>
+                            <img class="d-block w-100" src="img/Voitures/NismoGTRGT32018-2-compressor.jpg" alt="GTRGT32">
+                        </div>
+                        <div class="carousel-item">
+                            <h2>Porsche 911 II GT3R</h2>
+                            <img class="d-block w-100" src="img/Voitures/Porsche911IIGT3R-1-compressor.jpg" alt="911IIGT3R1">
+                        </div>
+                        <div class="carousel-item">
+                            <h2>Porsche 911 II GT3R</h2>
+                            <img class="d-block w-100" src="img/Voitures/Porsche911IIGT3R-2-compressor.jpg" alt="911IIGT3R2">
+                        </div>
+                        <div class="carousel-item">
+                            <h2>Porsche 911 GT3R</h2>
+                            <img class="d-block w-100" src="img/Voitures/Porsche911GT3R-1-compressor.jpg" alt="911GT3R1">
+                        </div>
+                        <div class="carousel-item">
+                            <h2>Porsche 911 GT3R</h2>
+                            <img class="d-block w-100" src="img/Voitures/Porsche911GT3R-2-compressor.jpg" alt="911GT3R2">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#voitures" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#voitures" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Fermer</button>
+        </div>
+    </div>
+</div>
+</div>
+</section>
+
+<!--Cup (Jumbotron)------------------------------------------------------------------------------------------------------------- -->
+<section class="cup">
+<div class="jumbotron jumbotron-fluid py-4 mb-0">
+    <div class="row no-gutters d-flex text-center justify-content-center">
+        <div class="col-lg-6 col-md-12 col-sm-12">
+            <h1>Lamborghini</h1>
+            <h1>Huracan Super<br> Trofeo</h1>
+            <img class="img-fluid" width="60%" src="img/Voitures/LamboHuracanGT3Evo-1-compressor.jpg" alt="Huracan Super Trofeo"/>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12">
+            <h1>Porsche</h1>
+            <h1 class="pb-1">911 GT3 <br>Cup</h1>
+            <img class="img-fluid" width="60%" src="img/Voitures/Porsche911GT3Cup-1-compressor.jpg" alt="Porsche 911 GT3 Cup"/>
+        </div>
+    </div>
+</div>
+</section>
+
+<!--DLC------------------------------------------------------------------------------------------------------------- -->
+<section class="dlc">
+<div class="container-fluid py-4 px-5">
+    <div class="row no-gutters d-flex text-center justify-content-center">
+        <div class="col-lg-6 col-md-12 col-sm-12">
+            <h1>GT4</h1>
+            <h1>Été 2020</h1>
+            <p>En plus de tous ses choix dans la catégorie GT3, au mois de Juin 2020 ACC va recevoir un DLC contenant plus de 10 voitures de la catégorie GT4, ce qui nous permettera de faire des courses multi-classe pour encore plus d'immersion.</p>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12">
+            <h1>GT2 ?</h1>
+            <h1>2020-2021 ?</h1>
+            <p>Rien n'est officiel à ce sujet, mais comme Assetto Corsa Competizione est le simulateur officiel de la série GT World Challenge et qu'ils vont ajouter une nouvelle classe GT2 cette année, il est très possible qu'on voit arriver un DLC contenant les voitures de la catégorie GT2 dans un futur rapproché!</p>
+        </div>
+    </div>
+</div>
+</section>
+
+<script src="https://kit.fontawesome.com/a46d75ba7a.js"></script>
+<script src="Bootstrap/jquery-3.4.1.min.js"></script>
+<script src="Bootstrap/js/bootstrap.js"></script>
+</body>
+
+<footer class="footer mt-auto py-3 px-0 mx-0">
+    <div class="container">
+        <span class="text-white">Pour nous contacter : <A HREF="mailto:julienh.simracer@gmail.com" target="_blank">julienh.simracer@gmail.com</A> <a href="equipe.html">Organisation</a></span>
+    </div>
+</footer>
+
+</html>
