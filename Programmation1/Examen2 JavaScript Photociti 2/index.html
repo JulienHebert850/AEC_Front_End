@@ -1,0 +1,745 @@
+<!-- Par Julien Hebert -->
+<!DOCTYPE html>
+<html lang="fr-ca">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Projet Final Programmation Web 1</title>
+        <link rel="stylesheet" href="Bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<section id="formulaire">
+        <div class="container-fluid pt-5 pl-5">
+            <div class="row no-gutters d-flex justify-content-left">
+
+                <div class="col-lg-12">
+                    <p>Étape 1</p>
+                </div>
+
+                <div class="col-lg-12">
+                    <i class="far fa-keyboard d-inline"></i>
+                    <p class="d-inline">Entrez votre mot</p>
+                </div>
+
+                <div class="col-lg-12">
+
+                    <div class="form-control form form-inline" id="my-form">
+                        <label for="case"></label>
+                        <input id="case" name="case" placeholder="Entrez votre mot">
+                        <button type="submit" name="submit" class="btn btn-primary mb-2" onclick="prendrevaleur()">GO</button>
+                    </div>
+
+                    <div id="error"></div>
+
+                </div>
+                <div class="col-lg-12">
+                    <p>Utilisez * pour les caractères spéciaux</p>
+                </div>
+
+            </div>
+        </div>
+</section>
+
+<section id="choixbackground">
+    <div class="container-fluid img-fluid pl-5 pb-3">
+        <div class="row no-gutters d-flex justify-content-left">
+            <div class="col-12">
+                <h5>Changez le fond</h5>
+                <p>Choisissez la couleur de votre fond</p>
+            </div>
+            <div class="col-6">
+                <input type="image" id="backgroundblanc" role="button" alt="backgroundmot" src="background/blanc.jpg" width="50%" class="img-thumb">
+                <input type="image" id="backgroundbleu" role="button" alt="backgroundmot" src="background/bleu.jpg" width="50%" class="img-thumb">
+                <input type="image" id="backgroundbleuf" role="button" alt="backgroundmot" src="background/bleuFonce.jpg" width="50%" class="img-thumb">
+                <input type="image" id="backgroundgris" role="button" alt="backgroundmot" src="background/gris.jpg" width="50%" class="img-thumb">
+                <input type="image" id="backgroundnoir" role="button" alt="backgroundmot" src="background/noir.jpg" width="50%" class="img-thumb">
+                <input type="image" id="backgroundrose" role="button" alt="backgroundmot" src="background/rose.jpg" width="50%" class="img-thumb">
+                <input type="image" id="backgroundrouge" role="button" alt="backgroundmot" src="background/rouge.jpg" width="50%" class="img-thumb">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="motphoto">
+        <div class="mx-5">
+            <div class="container-fluid py-5 d-print-none background-image">
+
+                <div class="row no-gutters d-flex justify-content-center align-content-center align-items-center img-fluid">
+
+                    <div id="photo0" class="col-2 img-fluid px-1">
+
+                        <a href="#lettre0modal" role="button" data-toggle="modal" data-target="#lettre0modal" onclick="lettrecarousel0()">
+                            <div id="lettre0" class="border-white"></div>
+                        </a>
+
+                        <div class="modal fade" id="lettre0modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="modalchoix0"></h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+
+                                        <div id="carousel0" class="carousel slide" data-ride="carousel">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <div id="lettre0-0"></div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div id="lettre0-1"></div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div id="lettre0-2"></div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div id="lettre0-3"></div>
+                                                </div>
+                                            </div>
+                                            <a class="carousel-control-prev" href="#carousel0" role="button" data-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="sr-only">Previous</span>
+                                            </a>
+                                            <a class="carousel-control-next" href="#carousel0" role="button" data-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="sr-only">Next</span>
+                                            </a>
+                                        </div>
+
+
+
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                                        <button type="button" class="btn btn-primary">Confirmez votre choix</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div id="photo1" class="col-2 img-fluid px-1">
+
+                        <a href="#lettre1modal" role="button" data-toggle="modal" data-target="#lettre1modal" onclick="lettrecarousel1()">
+                            <div id="lettre1"></div>
+                        </a>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="lettre1modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="modalchoix1"></h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+
+                                        <div id="carousel1" class="carousel slide" data-ride="carousel">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <div id="lettre1-0"></div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div id="lettre1-1"></div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div id="lettre1-2"></div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div id="lettre1-3"></div>
+                                                </div>
+                                            </div>
+                                            <a class="carousel-control-prev" href="#carousel1" role="button" data-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="sr-only">Previous</span>
+                                            </a>
+                                            <a class="carousel-control-next" href="#carousel1" role="button" data-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="sr-only">Next</span>
+                                            </a>
+                                        </div>
+
+
+
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                                        <button type="button" class="btn btn-primary">Confirmez votre choix</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div id="photo2" class="col-2 img-fluid px-1">
+                        <a href="#lettre2modal" role="button" data-toggle="modal" data-target="#lettre2modal" onclick="lettrecarousel2()">
+                            <div id="lettre2"></div>
+                        </a>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="lettre2modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="modalchoix2"></h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+
+                                        <div id="carousel2" class="carousel slide" data-ride="carousel">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <div id="lettre2-0"></div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div id="lettre2-1"></div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div id="lettre2-2"></div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div id="lettre2-3"></div>
+                                                </div>
+                                            </div>
+                                            <a class="carousel-control-prev" href="#carousel2" role="button" data-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="sr-only">Previous</span>
+                                            </a>
+                                            <a class="carousel-control-next" href="#carousel2" role="button" data-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="sr-only">Next</span>
+                                            </a>
+                                        </div>
+
+
+
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                                        <button type="button" class="btn btn-primary">Confirmez votre choix</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div id="photo3" class="col-2 img-fluid px-1">
+                        <a href="#lettre3modal" role="button" data-toggle="modal" data-target="#lettre3modal" onclick="lettrecarousel3()">
+                            <div id="lettre3"></div>
+                        </a>
+
+
+                        <div class="modal fade" id="lettre3modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="modalchoix3"></h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+
+                                        <div id="carousel3" class="carousel slide" data-ride="carousel">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <div id="lettre3-0"></div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div id="lettre3-1"></div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div id="lettre3-2"></div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div id="lettre3-3"></div>
+                                                </div>
+                                            </div>
+                                            <a class="carousel-control-prev" href="#carousel3" role="button" data-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="sr-only">Previous</span>
+                                            </a>
+                                            <a class="carousel-control-next" href="#carousel3" role="button" data-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="sr-only">Next</span>
+                                            </a>
+                                        </div>
+
+
+
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                                        <button type="button" class="btn btn-primary">Confirmez votre choix</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div id="photo4" class="col-2 img-fluid px-1">
+                    <a href="#lettre4modal" role="button" data-toggle="modal" data-target="#lettre4modal" onclick="lettrecarousel4()">
+                        <div id="lettre4"></div>
+                    </a>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="lettre4modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="modalchoix4"></h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+
+                                    <div id="carousel4" class="carousel slide" data-ride="carousel">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <div id="lettre4-0"></div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div id="lettre4-1"></div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div id="lettre4-2"></div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div id="lettre4-3"></div>
+                                            </div>
+                                        </div>
+                                        <a class="carousel-control-prev" href="#carousel4" role="button" data-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                        <a class="carousel-control-next" href="#carousel4" role="button" data-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                    </div>
+
+
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                                    <button type="button" class="btn btn-primary">Confirmez votre choix</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                    <div id="photo5" class="col-2 img-fluid px-1">
+                        <a href="#lettre5modal" role="button" data-toggle="modal" data-target="#lettre5modal" onclick="lettrecarousel5()">
+                            <div id="lettre5"></div>
+                        </a>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="lettre5modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="modalchoix5"></h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+
+                                        <div id="carousel5" class="carousel slide" data-ride="carousel">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <div id="lettre5-0"></div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div id="lettre5-1"></div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div id="lettre5-2"></div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div id="lettre5-3"></div>
+                                                </div>
+                                            </div>
+                                            <a class="carousel-control-prev" href="#carousel5" role="button" data-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="sr-only">Previous</span>
+                                            </a>
+                                            <a class="carousel-control-next" href="#carousel5" role="button" data-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="sr-only">Next</span>
+                                            </a>
+                                        </div>
+
+
+
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                                        <button type="button" class="btn btn-primary">Confirmez votre choix</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div id="photo6" class="col-2 img-fluid px-1">
+                        <a href="#lettre6modal" role="button" data-toggle="modal" data-target="#lettre6modal" onclick="lettrecarousel6()">
+                            <div id="lettre6"></div>
+                        </a>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="lettre6modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="modalchoix6"></h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+
+                                        <div id="carousel6" class="carousel slide" data-ride="carousel">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <div id="lettre6-0"></div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div id="lettre6-1"></div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div id="lettre6-2"></div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div id="lettre6-3"></div>
+                                                </div>
+                                            </div>
+                                            <a class="carousel-control-prev" href="#carousel6" role="button" data-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="sr-only">Previous</span>
+                                            </a>
+                                            <a class="carousel-control-next" href="#carousel6" role="button" data-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="sr-only">Next</span>
+                                            </a>
+                                        </div>
+
+
+
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                                        <button type="button" class="btn btn-primary">Confirmez votre choix</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div id="photo7" class="col-2 img-fluid px-1">
+                        <a href="#lettre7modal" role="button" data-toggle="modal" data-target="#lettre7modal" onclick="lettrecarousel7()">
+                            <div id="lettre7"></div>
+                        </a>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="lettre7modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="modalchoix7"></h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+
+                                        <div id="carousel7" class="carousel slide" data-ride="carousel">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <div id="lettre7-0"></div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div id="lettre7-1"></div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div id="lettre7-2"></div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div id="lettre7-3"></div>
+                                                </div>
+                                            </div>
+                                            <a class="carousel-control-prev" href="#carousel7" role="button" data-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="sr-only">Previous</span>
+                                            </a>
+                                            <a class="carousel-control-next" href="#carousel7" role="button" data-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="sr-only">Next</span>
+                                            </a>
+                                        </div>
+
+
+
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                                        <button type="button" class="btn btn-primary">Confirmez votre choix</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div id="photo8" class="col-2 img-fluid px-1">
+                        <a href="#lettre8modal" role="button" data-toggle="modal" data-target="#lettre8modal" onclick="lettrecarousel8()">
+                            <div id="lettre8"></div>
+                        </a>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="lettre8modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="modalchoix8"></h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+
+                                        <div id="carousel8" class="carousel slide" data-ride="carousel">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <div id="lettre8-0"></div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div id="lettre8-1"></div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div id="lettre8-2"></div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div id="lettre8-3"></div>
+                                                </div>
+                                            </div>
+                                            <a class="carousel-control-prev" href="#carousel8" role="button" data-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="sr-only">Previous</span>
+                                            </a>
+                                            <a class="carousel-control-next" href="#carousel8" role="button" data-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="sr-only">Next</span>
+                                            </a>
+                                        </div>
+
+
+
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                                        <button type="button" class="btn btn-primary">Confirmez votre choix</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div id="photo9" class="col-2 img-fluid px-1">
+                        <a href="#lettre9modal" role="button" data-toggle="modal" data-target="#lettre9modal" onclick="lettrecarousel9()">
+                            <div id="lettre9"></div>
+                        </a>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="lettre9modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="modalchoix9"></h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+
+                                        <div id="carousel9" class="carousel slide" data-ride="carousel">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <div id="lettre9-0"></div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div id="lettre9-1"></div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div id="lettre9-2"></div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div id="lettre9-3"></div>
+                                                </div>
+                                            </div>
+                                            <a class="carousel-control-prev" href="#carousel9" role="button" data-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="sr-only">Previous</span>
+                                            </a>
+                                            <a class="carousel-control-next" href="#carousel9" role="button" data-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="sr-only">Next</span>
+                                            </a>
+                                        </div>
+
+
+
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                                        <button type="button" class="btn btn-primary">Confirmez votre choix</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div id="photo10" class="col-2 img-fluid px-1">
+                        <a href="#lettre10modal" role="button" data-toggle="modal" data-target="#lettre10modal" onclick="lettrecarousel10()">
+                            <div id="lettre10"></div>
+                        </a>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="lettre10modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="modalchoix10"></h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+
+                                        <div id="carousel10" class="carousel slide" data-ride="carousel">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <div id="lettre10-0"></div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div id="lettre10-1"></div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div id="lettre10-2"></div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div id="lettre10-3"></div>
+                                                </div>
+                                            </div>
+                                            <a class="carousel-control-prev" href="#carousel10" role="button" data-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="sr-only">Previous</span>
+                                            </a>
+                                            <a class="carousel-control-next" href="#carousel10" role="button" data-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="sr-only">Next</span>
+                                            </a>
+                                        </div>
+
+
+
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                                        <button type="button" class="btn btn-primary">Confirmez votre choix</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div id="photo11" class="col-2 img-fluid px-1">
+                        <a href="#lettre11modal" role="button" data-toggle="modal" data-target="#lettre11modal" onclick="lettrecarousel11()">
+                            <div id="lettre11"></div>
+                        </a>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="lettre11modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="modalchoix11"></h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+
+                                        <div id="carousel11" class="carousel slide" data-ride="carousel">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <div id="lettre11-0"></div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div id="lettre11-1"></div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div id="lettre11-2"></div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div id="lettre11-3"></div>
+                                                </div>
+                                            </div>
+                                            <a class="carousel-control-prev" href="#carousel11" role="button" data-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="sr-only">Previous</span>
+                                            </a>
+                                            <a class="carousel-control-next" href="#carousel11" role="button" data-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="sr-only">Next</span>
+                                            </a>
+                                        </div>
+
+
+
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                                        <button type="button" class="btn btn-primary">Confirmez votre choix</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+</section>
+
+
+
+<script src="https://kit.fontawesome.com/a46d75ba7a.js"></script>
+<script src="Bootstrap/jquery-3.4.1.min.js"></script>
+<script src="Bootstrap/js/bootstrap.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

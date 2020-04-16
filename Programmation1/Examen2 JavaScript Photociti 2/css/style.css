@@ -1,0 +1,17 @@
+/* Par Julien Hébert */
+
+.background-image{
+    background-image: url("../background/bleu.jpg");
+    background-size: cover;
+}
+
+.img-thumb{
+    background: 50% 50% no-repeat; /* 50% 50% centers image in div */
+    width: 30px;
+    height: 30px;
+}
+
+img
+{
+    border: solid 2px white;
+}
