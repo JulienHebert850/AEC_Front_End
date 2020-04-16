@@ -287,7 +287,7 @@ function lettrecarousel0() {
     let img2 = document.createElement("img");
     let img3 = document.createElement("img");
     let img4 = document.createElement("img");
-    let letter = tabmot[0];
+    let letter = tabmot[0].toUpperCase();
     img1.src = "Letters/" + letter + "/" + letter + "2.jpg";
     let block1 = document.getElementById("lettre0-0");
     block1.appendChild(img1);
@@ -332,7 +332,7 @@ function lettrecarousel1() {
     let img2 = document.createElement("img");
     let img3 = document.createElement("img");
     let img4 = document.createElement("img");
-    let letter = tabmot[1];
+    let letter = tabmot[1].toUpperCase();
     img1.src = "Letters/" + letter + "/" + letter + "2.jpg";
     let block1= document.getElementById("lettre1-0");
     block1.appendChild(img1);
@@ -375,7 +375,7 @@ function lettrecarousel2() {
     let img2 = document.createElement("img");
     let img3 = document.createElement("img");
     let img4 = document.createElement("img");
-    let letter = tabmot[2];
+    let letter = tabmot[2].toUpperCase();
     img1.src = "Letters/" + letter + "/" + letter + "2.jpg";
     let block1 = document.getElementById("lettre2-0");
     block1.appendChild(img1);
@@ -418,7 +418,7 @@ function lettrecarousel3() {
     let img2 = document.createElement("img");
     let img3 = document.createElement("img");
     let img4 = document.createElement("img");
-    let letter = tabmot[3];
+    let letter = tabmot[3].toUpperCase();
     img1.src = "Letters/" + letter + "/" + letter + "2.jpg";
     let block1 = document.getElementById("lettre3-0");
     block1.appendChild(img1);
@@ -461,7 +461,7 @@ function lettrecarousel4() {
     let img2 = document.createElement("img");
     let img3 = document.createElement("img");
     let img4 = document.createElement("img");
-    let letter = tabmot[4];
+    let letter = tabmot[4].toUpperCase();
     img1.src = "Letters/" + letter + "/" + letter + "2.jpg";
     let block1 = document.getElementById("lettre4-0");
     block1.appendChild(img1);
@@ -504,7 +504,7 @@ function lettrecarousel5() {
     let img2 = document.createElement("img");
     let img3 = document.createElement("img");
     let img4 = document.createElement("img");
-    let letter = tabmot[5];
+    let letter = tabmot[5].toUpperCase();
     img1.src = "Letters/" + letter + "/" + letter + "2.jpg";
     let block1 = document.getElementById("lettre5-0");
     block1.appendChild(img1);
@@ -547,7 +547,7 @@ function lettrecarousel6() {
     let img2 = document.createElement("img");
     let img3 = document.createElement("img");
     let img4 = document.createElement("img");
-    let letter = tabmot[6];
+    let letter = tabmot[6].toUpperCase();
     img1.src = "Letters/" + letter + "/" + letter + "2.jpg";
     let block1 = document.getElementById("lettre6-0");
     block1.appendChild(img1);
@@ -590,7 +590,7 @@ function lettrecarousel7() {
     let img2 = document.createElement("img");
     let img3 = document.createElement("img");
     let img4 = document.createElement("img");
-    let letter = tabmot[7];
+    let letter = tabmot[7].toUpperCase();
     img1.src = "Letters/" + letter + "/" + letter + "2.jpg";
     let block1 = document.getElementById("lettre7-0");
     block1.appendChild(img1);
@@ -633,7 +633,7 @@ function lettrecarousel8() {
     let img2 = document.createElement("img");
     let img3 = document.createElement("img");
     let img4 = document.createElement("img");
-    let letter = tabmot[8];
+    let letter = tabmot[8].toUpperCase().toUpperCase();
     img1.src = "Letters/" + letter + "/" + letter + "2.jpg";
     let block1 = document.getElementById("lettre8-0");
     block1.appendChild(img1);
@@ -676,7 +676,7 @@ function lettrecarousel9() {
     let img2 = document.createElement("img");
     let img3 = document.createElement("img");
     let img4 = document.createElement("img");
-    let letter = tabmot[9];
+    let letter = tabmot[9].toUpperCase();
     img1.src = "Letters/" + letter + "/" + letter + "2.jpg";
     let block1 = document.getElementById("lettre9-0");
     block1.appendChild(img1);
@@ -719,7 +719,7 @@ function lettrecarousel10() {
     let img2 = document.createElement("img");
     let img3 = document.createElement("img");
     let img4 = document.createElement("img");
-    let letter = tabmot[10];
+    let letter = tabmot[10].toUpperCase();
     img1.src = "Letters/" + letter + "/" + letter + "2.jpg";
     let block1 = document.getElementById("lettre10-0");
     block1.appendChild(img1);
@@ -762,7 +762,7 @@ function lettrecarousel11() {
     let img2 = document.createElement("img");
     let img3 = document.createElement("img");
     let img4 = document.createElement("img");
-    let letter = tabmot[11];
+    let letter = tabmot[11].toUpperCase();
     img1.src = "Letters/" + letter + "/" + letter + "2.jpg";
     let block1 = document.getElementById("lettre11-0");
     block1.appendChild(img1);
