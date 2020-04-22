@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5f361e03.chunk.css",
+    "main.js": "/static/js/main.9aa4e17c.chunk.js",
+    "main.js.map": "/static/js/main.9aa4e17c.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.c24ea5dd.js",
+    "runtime-main.js.map": "/static/js/runtime-main.c24ea5dd.js.map",
+    "static/js/2.f70bdeee.chunk.js": "/static/js/2.f70bdeee.chunk.js",
+    "static/js/2.f70bdeee.chunk.js.map": "/static/js/2.f70bdeee.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.c3a2357b71770177211ef44823a96ac3.js": "/precache-manifest.c3a2357b71770177211ef44823a96ac3.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.f70bdeee.chunk.js.LICENSE.txt": "/static/js/2.f70bdeee.chunk.js.LICENSE.txt",
+    "static/media/AC2   2020-04-19 21_55_33 (1).jpg": "/static/media/AC2   2020-04-19 21_55_33 (1).0499027c.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c24ea5dd.js",
+    "static/js/2.f70bdeee.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.9aa4e17c.chunk.js"
+  ]
+}
