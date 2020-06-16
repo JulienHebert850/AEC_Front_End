@@ -40,7 +40,7 @@ export class Accueil extends React.Component{
           <Container fluid>
               <Row>
                   <Col>
-                    <Deconnexion/>
+                    <Deconnexion onClick={this.verifierConnexion} />
                   </Col>
               </Row>
               
