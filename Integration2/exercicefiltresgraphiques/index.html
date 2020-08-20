@@ -1,0 +1,135 @@
+<!-- Par Julien Hebert -->
+<!DOCTYPE html>
+<html lang="fr-ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Exercice filtres et graphiques</title>
+    <link rel="stylesheet" href="bootstrap-4.5.0-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function myFunction() {
+            // Declare variables
+            var input, filter, table, tr, td, i, txtValue;
+            input = document.getElementById("monInput");
+            filter = input.value.toUpperCase();
+            table = document.getElementById("monTableau");
+            tr = table.getElementsByTagName("tr");
+
+            // Loop through all table rows, and hide those who don't match the search query
+            for (i = 0; i < tr.length; i++) {
+                td = tr[i].getElementsByTagName("td")[0];
+                if (td) {
+                    txtValue = td.textContent || td.innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        tr[i].style.display = "";
+                    } else {
+                        tr[i].style.display = "none";
+                    }
+                }
+            }
+        }
+    </script>
+
+</head>
+<body>
+
+<div class="container-fluid pt-4 pl-2">
+    <div class="col-6">
+        <label for="monInput"></label>
+        <i class="fas fa-search"></i>
+        <input type="text" id="monInput" onkeyup="myFunction()" placeholder="Search for names..">
+    </div>
+</div>
+
+<div class="container-fluid pt-4 pl-2">
+    <div class="col-6">
+<!-- Control buttons -->
+        <div id="myBtnContainer">
+            <button type="button" class="btn btn-outline-danger" onclick="trierAlpha('all')">Trier alphabétiquement</button>
+            <button type="button" class="btn btn-outline-danger" onclick="trierSortie('cars')">Trier par date de sortie</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    function trierAlpha() {
+        var table, rows, switching, i, x, y, shouldSwitch;
+        table = document.getElementById("monTableauTable");
+        switching = true;
+        /* Make a loop that will continue until
+        no switching has been done: */
+        while (switching) {
+            // Start by saying: no switching is done:
+            switching = false;
+            rows = table.rows;
+            /* Loop through all table rows (except the
+            first, which contains table headers): */
+            for (i = 1; i < (rows.length - 1); i++) {
+                // Start by saying there should be no switching:
+                shouldSwitch = false;
+                /* Get the two elements you want to compare,
+                one from current row and one from the next: */
+                x = rows[i].getElementsByTagName("th")[0];
+                y = rows[i + 1].getElementsByTagName("th")[0];
+                // Check if the two rows should switch place:
+                if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+                    // If so, mark as a switch and break the loop:
+                    shouldSwitch = true;
+                    break;
+                }
+            }
+            if (shouldSwitch) {
+                /* If a switch has been marked, make the switch
+                and mark that a switch has been done: */
+                rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+                switching = true;
+            }
+        }
+    }
+</script>
+
+<div class="container-fluid">
+    <div class="col-6">
+        <table class="table table-sm table-hover table-info table-bordered my-5" id="monTableau">
+            <thead>
+            <tr>
+                <th scope="col">Titre du film</th>
+                <th scope="col">Année de sortie</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Once Upon a Time... in Hollywood</td>
+                <td>2019</td>
+            </tr>
+            <tr>
+                <td>Pulp fiction</td>
+                <td>1994</td>
+            </tr>
+            <tr>
+                <td>Kill Bill</td>
+                <td>2003</td>
+            </tr>
+            <tr>
+                <td>Django</td>
+                <td>2012 </td>
+            </tr>
+            <tr>
+                <td>Inglourious Basterds</td>
+                <td>2009</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+
+
+
+<script src="https://kit.fontawesome.com/a46d75ba7a.js"></script>
+<script src="bootstrap-4.5.0-dist/jquery-3.4.1.min.js"></script>
+<script src="bootstrap-4.5.0-dist/js/bootstrap.js"></script>
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!-- Par Julien Hebert - 23 mai 2020-->
+
+<!DOCTYPE html>
+
+<html lang="fr-ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Examen formulaires</title>
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+
+<div class="container-fluid">
+    <div class="row pt-5">
+        <div class="col-xl-8 col-lg-6 col-md-6 col-sm-6 pt-5 pl-5 pb-5">
+
+            <h1>Participez à l'avenir de la race humaine</h1>
+            <p>Inscrivez-vous à la prochaine mission de la colonisation sur Mars!</p>
+
+            <hr>
+
+            <form class="form-group" id="spacex" onsubmit="return validerFormulaire()" method="post">
+                <div class="container no-gutters mt-5">
+                    <div class="form-group row py-2">
+
+                        <label for="identification" class="col-sm-2 col-form-label">Identification <span>*</span></label>
+                        <div class="col-3">
+                            <input type="text" pattern="[a-zA-Z-éàèÀÈÉçÇêÊëË]+" name="prenom" class="form-control" id="identification" required>
+                            <small id="prenomhelp" class="form-text">Prénom</small>
+                        </div>
+
+                        <label for="identification2"></label>
+                        <div class="col-4">
+                            <input type="text" class="form-control" id="identification2" pattern="[a-zA-Z-éàèÀÈÉçÇêÊëË]+" required>
+                            <small id="nomhelp" class="form-text">Nom</small>
+                        </div>
+                    </div>
+
+                    <div class="form-group row py-2">
+                        <label for="naissance" class="col-sm-2 col-form-label">Date de naissance <span>*</span></label>
+                        <div class="col-10">
+                            <input type="date" class="form-control" id="naissance" required>
+                            <small id="naisssancehelp" class="form-text">Date de naissance</small>
+                        </div>
+                    </div>
+
+                    <div class="form-group row py-2">
+                        <label for="coderegional" class="col-sm-2 col-form-label">Numéro de téléphone <span>*</span></label>
+                        <div class="col-2">
+                            <input type="number" id="coderegional" class="form-control" maxlength="3" required>
+                            <small id="coderegionalhelp" class="form-text">Code régional</small>
+                        </div>
+                        <p>_</p><label for="numerotelephone"></label>
+                        <div class="col-4">
+
+                            <input type="number" class="form-control" id="numerotelephone" pattern="[0-9-]+" maxlength="8" required>
+                            <small id="numerotelephonehelp" class="form-text">Numéro de téléphone </small>
+                        </div>
+                    </div>
+
+                    <div class="form-group row py-2">
+                        <label for="email" class="col-sm-2 col-form-label">E-Mail <span>*</span></label>
+                        <div class="col-8">
+                            <input type="email" class="form-control" id="email" placeholder="ex: name@example.com" required>
+                            <small id="emailhelp" class="form-text">exemple@exemple.com</small>
+                        </div>
+                    </div>
+
+                    <div class="form-group row py-2">
+                        <label for="numporte" class="col-sm-2 col-form-label">Adresse <span>*</span></label>
+                        <div class="col-9 py-2">
+                            <input type="text" class="form-control" id="numporte" required>
+                            <small id="numportehelp" class="form-text">Numéro de porte</small>
+                            <label for="numappartement"></label>
+                            <input type="number" class="form-control" id="numappartement" required>
+                            <small id="numappartementhelp" class="form-text">Numéro d'appartement</small>
+                        </div>
+
+                        <label for="ville" class="col-sm-2 col-form-label"></label>
+                        <div class="col-5 py-3">
+                            <input type="text" class="form-control py-2" id="ville" required>
+                            <small id="villehelp" class="form-text">Ville</small>
+                        </div>
+
+                        <label for="province"></label>
+                        <div class="col-4 py-3">
+                            <input type="text" list="choixprov" class="form-control" id="province" required>
+                            <datalist id="choixprov">
+                                <option value="Alberta"></option>
+                                <option value="Colombie-Britannique"></option>
+                                <option value="Île-du-Prince-Édouard"></option>
+                                <option value="Manitoba"></option>
+                                <option value="Nouveau-Brunswick"></option>
+                                <option value="Nouvelle-Écosse"></option>
+                                <option value="Ontario"></option>
+                                <option value="Québec"></option>
+                                <option value="Saskatchewan"></option>
+                                <option value="Terre-Neuve-et-Labrador"></option>
+                                <option value="Nunavut"></option>
+                                <option value="Territoires du Nord-Ouest "></option>
+                                <option value="Yukon"></option>
+                            </datalist>
+                            <small id="provincehelp" class="form-text">État/Province</small>
+                        </div>
+
+                        <label for="codepostal" class="col-sm-2 col-form-label"></label>
+                        <div class="col-5 py-3">
+                            <input type="text" class="form-control" id="codepostal" pattern="[a-zA-Z0-9]+" required>
+                            <small id="codepostalhelp" class="form-text">Code Postal</small>
+                        </div>
+                    </div>
+
+                    <div class="form-group row py-3">
+                        <label for="sexe" class="col-sm-2 col-form-label">Sexe <span>*</span></label>
+                            <div class="col-5">
+                                <input type="text" list="choixsexe" name="sexe" id="sexe" class="form-control" required>
+                                    <datalist id="choixsexe">
+                                        <option value="Femme"></option>
+                                        <option value="Homme"></option>
+                                        <option value="LGBQT+"></option>
+                                    </datalist>
+                            </div>
+                    </div>
+
+                    <div class="form-group row py-3">
+                        <label for="metier" class="col-sm-2 col-form-label">Métier <span>*</span></label>
+                        <div class="col-6">
+                            <input type="text" class="form-control" id="metier" placeholder="Parlez-nous de votre métier ..." required>
+                        </div>
+                    </div>
+
+                    <div class="form-group row py-3">
+                        <label for="presentation" class="col-sm-2 col-form-label">Pésentation <span>*</span></label>
+                        <div class="col-10">
+                            <textarea class="form-control" id="presentation" rows="3" placeholder="Présentez-vous!"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <label for="bouton" class="col-2 col-form-label"></label>
+                <button type="submit" id="bouton" form="spacex" class="btn btn-light">Soumettre ma candidature</button>
+            </form>
+        </div>
+
+        <div class="row pt-5 mt-5">
+            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 pl-5">
+
+                <canvas id="canvasexamen1" width="200" height="200" style="border:0 solid #1a1a1a;">
+                    <script>
+                        var canvas = document.getElementById("canvasexamen1");
+                        var ctx = canvas.getContext("2d");
+                    </script>
+
+                    <script>
+                        ctx.beginPath();
+                        ctx.arc(20, 20, 1, 22, 2 * Math.PI, true);
+                        ctx.addColorStop(0, "White");
+                        ctx.stroke();
+                    </script>
+
+                    <script>
+                        var grd = ctx.createRadialGradient(100, 100, 25, 100, 100, 80);
+                        grd.addColorStop(0, "Orange");
+                        grd.addColorStop(1, "Black");
+                        ctx.arc(100, 100, 60, 0, 2 * Math.PI);
+                    </script>
+
+                    <script>
+                        ctx.fillStyle = grd;
+                        ctx.fillRect(0, 0, 200, 200);
+
+                        ctx.fillStyle = "black";
+                        ctx.font = "20px Blippo, Fantasy";
+                        ctx.fillText("MARS", 79, 108);
+                    </script>
+                </canvas>
+
+                <svg width="200" height="225">
+                    <rect x="75" y="100" width="50" height="100" style="fill:white;" />
+                    <polygon points="100 15, 163 100, 40 100" style="fill:white"/>
+                    <text x="38" y="225" font-family="Lucida Console, Monaco, monospace" font-size="20" fill="white">Destination</text>
+                </svg>
+
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank" class="pt-5 mt-5 pl-4">
+                    <input type="hidden" name="cmd" value="_s-xclick" />
+                    <input type="hidden" name="hosted_button_id" value="Z4LFNAUJSQ8JA" />
+                    <input type="image" src="https://www.paypalobjects.com/fr_CA/i/btn/btn_donateCC_LG.gif" name="submit" title="PayPal - La façon sécuritaire et facile de faire un don!" alt="Bouton Faire un don avec PayPal" />
+                    <img alt="paypal" src="https://www.paypal.com/fr_CA/i/scr/pixel.gif" width="1" height="1" />
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    function validerFormulaire() {
+        var x = document.forms["spacex"]["coderegional"].value;
+        if (!(x === "418" || x === "514" || x === "819")) {
+            alert("Veuillez utiliser un code régional 418, 514 ou 819.");
+            return false;
+        }
+    }
+</script>
+
+
+<script src="Bootstrap/jquery-3.4.1.min.js"></script>
+<script src="Bootstrap/js/bootstrap.js"></script>
+</body>
+</html>

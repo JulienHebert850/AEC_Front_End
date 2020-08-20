@@ -1,0 +1,111 @@
+header{
+    background-image: url("../img/banniere.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+body{
+    background-image: url("../img/pattern-triforce-2x.png");
+    background-position: center;
+    background-color : #234f30;
+}
+
+hr{
+    border-top: 2px solid rgb(185, 195, 70);
+}
+
+li a{
+    color: white;
+    font-family: CinzelD-B;
+}
+
+a:hover{
+    color: #11a30e;
+}
+
+.sous-titre{
+    padding-bottom: 10%;
+    padding-top: 24%;
+    text-shadow: 0px 0px 4px #1a1a1a;
+    font-family: "CinzelD-B";
+    color : white;
+}
+
+h1{
+    text-shadow: 0px 0px 4px #1a1a1a;
+    font-family: "CinzelD-B";
+    color : white;
+}
+
+.separation{
+    background-image: url("../img/hyrule_rule.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 2%;
+}
+
+.zelda {
+    font-size: 5rem;
+    text-shadow: 0px 0px 4px #1a1a1a;
+    font-family: "CinzelD-B";
+    color : white;
+}
+
+.graphiques{
+    background-color: black;
+}
+
+.list-group-item{
+    background-color: #d9a936;
+    border: 2px solid rgb(9, 60, 25);
+}
+
+.form-control{
+    background-color: #ceb373ad;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.form-control::-webkit-input-placeholder {
+    color: white;
+}
+
+@font-face {
+    font-family: "CinzelD-B";
+    src: url(../font/CinzelDecorative-Bold.ttf);
+}
+
+a:link{
+    color : white;
+    text-decoration: underline;
+}
+
+a:visited{
+    color : white;
+    text-decoration: underline;
+}
+
+.liens{
+    font-size: 1.5rem;
+}
+
+/* Grow */
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+    transform: scale(1.1);
+}
+
+

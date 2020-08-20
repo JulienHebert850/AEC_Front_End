@@ -1,0 +1,443 @@
+<!-- Par Julien Hebert -->
+<!DOCTYPE html>
+<html lang="fr-ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Animation JS</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+
+
+<section id="navbar">
+<!-- NavBar -->
+<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark pr-0 mx-0">
+    <a class="navbar-brand" href="#">Mon film favori</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse sticky-top" id="navbarNav">
+
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Page 1<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Page 2</a></li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">Drop Down 1</a>
+                    <a class="dropdown-item" href="#">Drop Down 2</a>
+                </div>
+            </li>
+        </ul>
+        <span class="navbar-brand"><a class="nav-link" href="https://www.facebook.com/accqc/" target="_blank"><i class="fab fa-facebook"></i></a></span>
+        <span class="navbar-brand"><a class="nav-link" href="https://www.youtube.com/channel/UCRlbt6ul3iydP1Z8qAkuDpw?" target="_blank"><i class="fab fa-youtube"></i></a></span>
+        <span class="navbar-brand"><a class="nav-link" href="https://discord.gg/DMhH7Hq" target="_blank"><i class="fab fa-discord"></i></a></span>
+    </div>
+</nav>
+</section>
+
+<section id="section1">
+    <div class="container-fluid">
+        <div class="row no gutters pt-5 mt-5">
+
+            <div class="col-12 text-center">
+                <!-- svg describing the loadermade up of dashes and the race car-->
+                <svg viewBox="0 0 178 40" width="178" height="40">
+                    <!-- dash included behind the car
+                    ! be sure to delay the animation of the path after the dashes on the right side of the car
+                    -->
+                    <path
+                            class="air"
+                            d="M 46 16.5 h -20 a 8 8 0 0 1 0 -16"
+                            fill="none"
+                            stroke="#E85725"
+                            stroke-width="1"
+                            stroke-linejoin="round"
+                            stroke-linecap="round">
+                    </path>
+
+                    <!-- wrap the svg describing the car in a group
+                    this to translate the car horizontally within the wrapping svg
+                    -->
+                    <g id="car">
+                        <!-- svg describing the race car in a container 118 wide and 28.125 tall
+                        .125 due to the 2.25 width of the stroke
+
+                        position in the bottom center of the wrapping svg
+                        -->
+                        <svg viewBox="0 0 118 28.125" x="30" y="11.725" width="118" height="28.125">
+                            <defs>
+                                <!-- circle repeated for the wheel -->
+                                <circle
+                                        id="circle"
+                                        cx="0"
+                                        cy="0"
+                                        r="1">
+                                </circle>
+                                <!-- wheel
+                                three overlapping circles describing the parts of the wheel
+                                in between the circles add path elements to detail the graphic
+                                -->
+                                <g id="wheel">
+                                    <use href="#circle" fill="#1E191A" transform="scale(10)"></use>
+                                    <use href="#circle" fill="#fff" transform="scale(5)"></use>
+                                    <!-- inner shadow -->
+                                    <path
+                                            fill="#1E191A"
+                                            stroke="#1E191A"
+                                            stroke-width="0.5"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            opacity="0.2"
+                                            stroke-dashoffset="0"
+                                            d="M -3.5 0 a 4 4 0 0 1 7 0 a 3.5 3.5 0 0 0 -7 0">
+                                    </path>
+                                    <use href="#circle" fill="#1E191A" transform="scale(1.5)"></use>
+                                    <!-- yellow stripe
+                                    include stroke-dasharray values totalling the circumference of the circle
+                                    this to use the dash-offset property and have the stripe rotate around the center while keeping its shape
+                                    ! explicitly set the stroke-dashoffset property to 0 for the other path elements (in this way the stroke-dashoffset attribute added through the <use> element affects only this path)
+                                    -->
+                                    <path
+                                            fill="none"
+                                            stroke="#F9B35C"
+                                            stroke-width="0.75"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-dasharray="20 14 8 5"
+                                            d="M 0 -7.5 a 7.5 7.5 0 0 1 0 15 a 7.5 7.5 0 0 1 0 -15">
+                                    </path>
+                                    <!-- outer glow (from a hypothetical light source) -->
+                                    <path
+                                            fill="none"
+                                            stroke="#fff"
+                                            stroke-width="1"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            opacity="0.1"
+                                            stroke-dashoffset="0"
+                                            d="M -6.5 -6.25 a 10 10 0 0 1 13 0 a 9 9 0 0 0 -13 0">
+                                    </path>
+                                </g>
+                            </defs>
+                            <!-- group describing the pilot's helmet
+                            translate in the middle of the cockpit
+                            -->
+                            <g transform="translate(51.5 11.125)">
+                                <path
+                                        stroke-width="2"
+                                        stroke="#1E191A"
+                                        fill="#EF3F33"
+                                        d="M 0 0 v -2 a 4.5 4.5 0 0 1 9 0 v 2">
+                                </path>
+                                <rect
+                                        fill="#1E191A"
+                                        x="3.25"
+                                        y="-3"
+                                        width="5"
+                                        height="3">
+                                </rect>
+                            </g>
+
+                            <!-- group describing the car -->
+                            <g transform="translate(10 24.125)">
+                                <!-- shadow below the car
+                                ! change the transform-origin of the shadow to animate it from the top center
+                                the idea is to skew the shadow as the car moves
+                                -->
+                                <g transform="translate(59 0)">
+                                    <path
+                                            id="shadow"
+                                            opacity="0.7"
+                                            fill="#1E191A"
+                                            d="M -64 0 l -4 4 h 9 l 8 -1.5 h 100 l -3.5 -2.5">
+                                    </path>
+                                </g>
+                                <!-- path describing the frame of the car
+                                ! do not add a stroke at the bottom of the frame
+                                additional lines are overlapped to detail the belly of the vehicle
+                                -->
+                                <path
+                                        fill="#fff"
+                                        stroke="#1E191A"
+                                        stroke-width="2.25"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M 0 0 v -10 l 35 -13 v 5 l 4 0.5 l 0.5 4.5 h 35.5 l 30 13">
+                                </path>
+
+                                <!-- wings -->
+                                <g
+                                        fill="#fff"
+                                        stroke="#1E191A"
+                                        stroke-width="2.25"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                    <path
+                                            d="M -6 0 v -22 h 10 z">
+                                    </path>
+                                    <path
+                                            d="M 105 0 h -3 l -12 -5.2 v 6.2 h 12">
+                                    </path>
+                                </g>
+
+                                <!-- grey areas to create details around the car's dashes -->
+                                <g
+                                        fill="#949699"
+                                        opacity="0.7">
+                                    <rect
+                                            x="16"
+                                            y="-6"
+                                            width="55"
+                                            height="6">
+                                    </rect>
+                                    <path
+                                            d="M 24 -14 l 13 -1.85 v 1.85">
+                                    </path>
+                                </g>
+
+                                <!-- dashes included sparingly on top of the frame -->
+                                <g
+                                        fill="none"
+                                        stroke="#1E191A"
+                                        stroke-width="2.25"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                    <path
+                                            stroke-dasharray="30 7 42"
+                                            d="M 90 0 h -78">
+                                    </path>
+                                    <path
+                                            d="M 39.5 -13 h -15">
+                                    </path>
+                                </g>
+
+                                <!-- elements describing the side of the car -->
+                                <path
+                                        fill="#fff"
+                                        stroke="#1E191A"
+                                        stroke-width="2.25"
+                                        stroke-linejoin="round"
+                                        d="M 48.125 -6 h -29 v 6 h 29"><!-- .125 to tuck the path behind the rectangle and avoid a pixel disconnect as the svg is scaled -->
+                                </path>
+
+                                <rect
+                                        x="48"
+                                        y="-7.125"
+                                        width="6.125"
+                                        height="7.125"
+                                        fill="#1E191A">
+                                </rect>
+
+                                <!-- rear view mirror -->
+                                <g fill="#1E191A">
+                                    <rect
+                                            x="60"
+                                            y="-15"
+                                            width="1"
+                                            height="6">
+                                    </rect>
+                                    <rect
+                                            x="56.5"
+                                            y="-17.5"
+                                            width="6"
+                                            height="2.5">
+                                    </rect>
+                                </g>
+                            </g>
+
+                            <!-- group describing the wheels, positioned at the bottom of the graphic and at either end of the frame -->
+                            <g class="wheels" transform="translate(0 18.125)">
+                                <g transform="translate(10 0)">
+                                    <use href="#wheel"></use>
+                                </g>
+
+                                <g transform="translate(87 0)">
+                                    <!-- add an offset to rotate the yellow stripe around the center -->
+                                    <use href="#wheel" stroke-dashoffset="-22"></use>
+                                </g>
+                            </g>
+                        </svg>
+                    </g>
+
+                    <!-- dashes included above and around the race car
+                    ! include them in order from right to left
+                    this allows to rapidly assign an increasing delay in the script, to have the dashes animated in sequence
+                    -->
+                    <g
+                            fill="none"
+                            stroke-width="1"
+                            stroke-linejoin="round"
+                            stroke-linecap="round">
+                        <!-- right side -->
+                        <path
+                                class="air"
+                                stroke="#E85725"
+                                d="M 177.5 34 h -10 q -16 0 -32 -8">
+                        </path>
+
+                        <path
+                                class="air"
+                                stroke="#949699"
+                                d="M 167 28.5 c -18 -2 -22 -8 -37 -10.75">
+                        </path>
+
+                        <path
+                                class="air"
+                                stroke="#949699"
+                                d="M 153 20 q -4 -1.7 -8 -3">
+                        </path>
+
+                        <path
+                                class="air"
+                                stroke="#E85725"
+                                d="M 117 16.85 c -12 0 -12 16 -24 16 h -8"><!-- around (117 29.85) where the right wheel is centered -->
+                        </path>
+
+                        <!-- left side -->
+                        <path
+                                class="air"
+                                stroke="#949699"
+                                d="M 65 12 q -5 3 -12 3.8">
+                        </path>
+
+                        <path
+                                class="air"
+                                stroke="#949699"
+                                stroke-dasharray="9 10"
+                                d="M 30 13.5 h -2.5 q -5 0 -5 -5">
+                        </path>
+
+                        <path
+                                class="air"
+                                stroke="#949699"
+                                d="M 31 33 h -10">
+                        </path>
+
+                        <path
+                                class="air"
+                                stroke="#949699"
+                                d="M 29.5 23 h -12">
+                        </path>
+                        <path
+                                class="air"
+                                stroke="#949699"
+                                d="M 13.5 23 h -6">
+                        </path>
+
+                        <path
+                                class="air"
+                                stroke="#E85725"
+                                d="M 28 28 h -27.5">
+                        </path>
+                    </g>
+                </svg>
+                <h1>Ford vs Ferrari</h1>
+                <p class="px-5 mx-5">Dans les années 60, les constructeurs Ford et Ferrari se livraient une guerre sans merci. À cette époque,<br> Henry Ford II reprenait l'entreprise familiale de son grand-père avec pour objectif d'imposer les voitures américaines sur le marché européen.<br> Il a été assisté par Lee Iacocca. La rivalité entre les deux constructeurs connue sont apogée lors de la Course du Mans de 1966.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="section3">
+    <div class="container-fluid background-image">
+        <div class="row">
+            <div class="col-12">
+                <h1>Section 3</h1>
+                <p>Voici la section 3</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="section2">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="car">
+                    <div class="body">
+                        <div class="mirror-wrap">
+                            <div class="mirror-inner">
+                                <div class="mirror">
+                                    <div class="shine"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="middle">
+                            <div class="top">
+                                <div class="line"></div>
+                            </div>
+                            <div class="bottom">
+                                <div class="lights">
+                                    <div class="line"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bumper">
+                            <div class="top"></div>
+                            <div class="middle" data-numb="&#2348;&#2366; &#2415;&#2411; &#2330; &#2415;&#2411;&#2415;&#2411;"></div>
+                            <div class="bottom"></div>
+                        </div>
+                    </div>
+                    <div class="tyres">
+                        <div class="tyre back"></div>
+                        <div class="tyre front"></div>
+                    </div>
+                </div>
+                <div class="road-wrap">
+                    <div class="road">
+                        <div class="lane-wrap">
+                            <div class="lane">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section id="section4">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <h1>Section 4</h1>
+                <p>Voici la section 4</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<script src="anime-master/lib/anime.js"></script>
+<script src="js/script.js"></script>
+<script src="https://kit.fontawesome.com/a46d75ba7a.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>

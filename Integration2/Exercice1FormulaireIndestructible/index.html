@@ -1,0 +1,79 @@
+<!-- Par Julien Hebert -->
+<!DOCTYPE html>
+<html lang="fr-ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Exercice 1</title>
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.css">
+    <!-- VOTRE CSS ICI APPPPPPRRRRREEESSSSS -->
+</head>
+<body>
+<form name="formulairechat" id="formulairechat" action="action_page.php" onsubmit="return validerFormulaire()" method="post">
+    <label for="fname">Nom du chat</label><br>
+    <input type="text" id="fname" name="fname"><br>
+
+    <label for="fage">Age du chat</label><br>
+    <input type="number" id="fage" name="fage"><br>
+
+    <label for="fdatenaiss">Date de naissance du chat</label><br>
+    <input type="date" id="fdatenaiss" name="fdatenaiss"><br>
+
+    <label for="ftaille">Taille du chat</label><br>
+    <input type="number" id="ftaille" name="ftaille"><br>
+
+    <label for="fpoids">Poids du chat</label><br>
+    <input type="number" id="fpoids" name="fpoids"><br>
+
+    <label for="fvaccinoui">Vacciné</label><br>
+    <input type="radio" id="fvaccinoui" name="fvaccinoui"><br>
+    <label for="fvaccinnon">Non vacciné</label><br>
+    <input type="radio" id="fvaccinnon" name="fvaccinnon"><br>
+
+    <label for="fcouleur">Couleur du chat</label><br>
+    <input type="text" id="fcouleur" name="fcouleur"><br>
+
+    <label for="fdomestique">Domestique</label><br>
+    <input type="radio" id="fdomestique" name="fdomestique"><br>
+    <label for="frace">Racé</label><br>
+    <input type="radio" id="frace" name="frace"><br>
+
+    <label for="flieunaiss">Lieu de naissance</label><br>
+    <input type="text" id="flieunaiss" name="flieunaiss"><br>
+
+    <label for="fphotos">Plusieurs photos</label><br>
+    <input type="file" id="fphotos" name="fphotos" multiple><br>
+
+    <label for="fcourriel">Votre courriel</label><br>
+    <input type="email" id="fcourriel" name="fcourriel"><br>
+
+    <label for="ftelephone">Votre numéro de téléphone</label><br>
+    <input type="tel" id="ftelephone" name="ftelephone"><br>
+
+    <script>
+        function validerFormulaire() {
+            var x = document.forms["formulairechat"]["fcouleur"].value;
+            if (x !== "Noir" || "Blanc" || "Brun" || "Mixte") {
+                alert("La couleur n'est pas la bonne.");
+                return false;
+            }
+        }
+    </script>
+
+    <input type="submit">
+
+
+
+</form>
+
+
+
+
+
+
+
+<script src="https://kit.fontawesome.com/a46d75ba7a.js"></script>
+<script src="Bootstrap/jquery-3.4.1.min.js"></script>
+<script src="Bootstrap/js/bootstrap.js"></script>
+</body>
+</html>
