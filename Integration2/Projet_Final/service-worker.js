@@ -44,6 +44,7 @@ const FILES_TO_CACHE = [
     'font/concieliancond.ttf',
     'font/Prime-Regular.ttf',
     'img/icons/eGT3.png',
+    'img/icons/icon-192.png',
     'img/icons/icon-256.png',
     'img/icons/icon-512.png',
     'img/icons/Julien_Hebert.png',
