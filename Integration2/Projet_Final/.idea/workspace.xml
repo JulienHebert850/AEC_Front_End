@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="510d573a-d9b6-4b39-b8e3-e6e0a4069308" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1hPYusuozRWfWyTwRdaB1zcHShJ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/AEC Développement Web/dart-sass/sass.bat" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\julie\Creative Cloud Files\Projets_Web\AEC_Front_End\Integration\Projet_Final\img\photos" />
+      <recent name="C:\Users\julie\Creative Cloud Files\Projets_Web\AEC_Front_End\Integration\Projet_Final" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="510d573a-d9b6-4b39-b8e3-e6e0a4069308" name="Default Changelist" comment="" />
+      <created>1599914419947</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1599914419947</updated>
+      <workItem from="1599914421025" duration="7094000" />
+      <workItem from="1599929387678" duration="4000" />
+      <workItem from="1600136843383" duration="45000" />
+      <workItem from="1600734054314" duration="1201000" />
+      <workItem from="1600789774903" duration="10000" />
+      <workItem from="1600812486787" duration="6000" />
+      <workItem from="1601065652985" duration="3833000" />
+      <workItem from="1601087428286" duration="7723000" />
+      <workItem from="1601123377528" duration="23611000" />
+      <workItem from="1601170106151" duration="2149000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="749" y="44" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1601090223863">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="749" y="44" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1601090223863" />
+    <state x="629" y="298" key="EditFileWatcherDialog" timestamp="1601087730984">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="629" y="298" key="EditFileWatcherDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1601087730984" />
+    <state x="269" y="274" key="FileChooserDialogImpl" timestamp="1601087730348">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="269" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1601087730348" />
+    <state x="461" y="165" key="SettingsEditor" timestamp="1601123903000">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1601123903000" />
+    <state x="1190" y="155" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1601170892550">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1190" y="155" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1601170892550" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1601126887333">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1601126887333" />
+    <state x="143" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1601123404912">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="143" y="230" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1601123404912" />
+  </component>
+</project>

@@ -1,0 +1,250 @@
+@font-face {
+  font-family: "Concielianboldital";
+  src: url(../font/concielianboldital.ttf);
+}
+@font-face {
+  font-family: "Concieliancond";
+  src: url(../font/concieliancond.ttf);
+}
+@font-face {
+  font-family: "Concieliancondital";
+  src: url(../font/concieliancondital.ttf);
+}
+@font-face {
+  font-family: "Prime";
+  src: url(../font/Prime-Regular.ttf);
+}
+h1 {
+  font-family: "Concielianboldital";
+}
+
+h4 {
+  font-family: "Concieliancond";
+}
+
+h6 {
+  font-family: "Concieliancondital";
+}
+
+p, a {
+  font-family: "Prime";
+}
+
+footer {
+  background-color: #4e555b;
+}
+
+nav {
+  background-color: #4e555b;
+}
+
+.p-t-5 {
+  padding-top: 5px;
+}
+
+.p-t-10 {
+  padding-top: 10px;
+}
+
+.p-t-15 {
+  padding-top: 15px;
+}
+
+.p-t-20 {
+  padding-top: 20px;
+}
+
+.p-t-25 {
+  padding-top: 25px;
+}
+
+.p-t-30 {
+  padding-top: 30px;
+}
+
+.p-t-35 {
+  padding-top: 35px;
+}
+
+.p-t-40 {
+  padding-top: 40px;
+}
+
+.p-t-45 {
+  padding-top: 45px;
+}
+
+.p-t-50 {
+  padding-top: 50px;
+}
+
+.p-b-5 {
+  padding-bottom: 5px;
+}
+
+.p-b-10 {
+  padding-bottom: 10px;
+}
+
+.p-b-15 {
+  padding-bottom: 15px;
+}
+
+.p-b-20 {
+  padding-bottom: 20px;
+}
+
+.p-b-25 {
+  padding-bottom: 25px;
+}
+
+.p-b-30 {
+  padding-bottom: 30px;
+}
+
+.p-b-35 {
+  padding-bottom: 35px;
+}
+
+.p-b-40 {
+  padding-bottom: 40px;
+}
+
+.p-b-45 {
+  padding-bottom: 45px;
+}
+
+.p-b-50 {
+  padding-bottom: 50px;
+}
+
+.p-l-5 {
+  padding-left: 5px;
+}
+
+.p-l-10 {
+  padding-left: 10px;
+}
+
+.p-l-15 {
+  padding-left: 15px;
+}
+
+.p-l-20 {
+  padding-left: 20px;
+}
+
+.p-l-25 {
+  padding-left: 25px;
+}
+
+.p-l-30 {
+  padding-left: 30px;
+}
+
+.p-l-35 {
+  padding-left: 35px;
+}
+
+.p-l-40 {
+  padding-left: 40px;
+}
+
+.p-l-45 {
+  padding-left: 45px;
+}
+
+.p-l-50 {
+  padding-left: 50px;
+}
+
+.p-r-5 {
+  padding-right: 5px;
+}
+
+.p-r-10 {
+  padding-right: 10px;
+}
+
+.p-r-15 {
+  padding-right: 15px;
+}
+
+.p-r-20 {
+  padding-right: 20px;
+}
+
+.p-r-25 {
+  padding-right: 25px;
+}
+
+.p-r-30 {
+  padding-right: 30px;
+}
+
+.p-r-35 {
+  padding-right: 35px;
+}
+
+.p-r-40 {
+  padding-right: 40px;
+}
+
+.p-r-45 {
+  padding-right: 45px;
+}
+
+.p-r-50 {
+  padding-right: 50px;
+}
+
+#backgroundpilotes {
+  background-image: url("../img/photos/AC2   2020-09-23 09_48_40.png");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#backgroundinscription {
+  background-image: url("../img/photos/Background_inscription.png");
+  background-size: cover;
+  background-attachment: fixed;
+  height: 47.3rem;
+}
+
+#backgroundpilote {
+  background-image: url("../img/photos/AC2   2020-02-03 22_42_07.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.img-hover-zoom {
+  overflow: hidden;
+}
+
+.img-hover-zoom img {
+  transition: transform 0.5s ease;
+}
+
+.img-hover-zoom:hover img {
+  transform: scale(1.5);
+}
+
+.img-hover-zoom--colorize img {
+  transition: transform 0.5s, filter 1.5s ease-in-out;
+  filter: grayscale(85%);
+}
+
+/* The Transformation */
+.img-hover-zoom--colorize:hover img {
+  filter: grayscale(0);
+  transform: scale(1.1);
+}
+
+.jumbotroninscription {
+  align-items: center;
+  justify-content: center;
+  height: 80.8vh;
+  opacity: 90%;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,125 @@
+//Font
+@import font.sass
+
+//Background color footer et navbar
+footer
+  background-color: #4e555b
+
+nav
+  background-color: #4e555b
+
+
+//////////////////////////////
+//Création règles de padding//
+/////////////////////////////
+
+//Padding Top
+$max: 50
+$offset: 5
+$unit: 'px'
+@mixin list-loop($className, $styleName)
+  $i: 5
+  @while $i <= $max
+    #{$className + $i}
+      #{$styleName}: #{$i + $unit}
+
+    $i: $i + $offset
+
+@include list-loop('.p-t-', 'padding-top')
+
+//Padding bottom
+$max: 50
+$offset: 5
+$unit: 'px'
+@mixin list-loop($className, $styleName)
+  $i: 5
+  @while $i <= $max
+    #{$className + $i}
+      #{$styleName}: #{$i + $unit}
+
+    $i: $i + $offset
+
+@include list-loop('.p-b-', 'padding-bottom')
+
+//Padding left
+$max: 50
+$offset: 5
+$unit: 'px'
+@mixin list-loop($className, $styleName)
+  $i: 5
+  @while $i <= $max
+    #{$className + $i}
+      #{$styleName}: #{$i + $unit}
+
+    $i: $i + $offset
+
+@include list-loop('.p-l-', 'padding-left')
+
+//Padding right
+$max: 50
+$offset: 5
+$unit: 'px'
+@mixin list-loop($className, $styleName)
+  $i: 5
+  @while $i <= $max
+    #{$className + $i}
+      #{$styleName}: #{$i + $unit}
+
+    $i: $i + $offset
+
+@include list-loop('.p-r-', 'padding-right')
+
+//Background image pilotes.html
+#backgroundpilotes
+  background-image: url("../img/photos/AC2   2020-09-23 09_48_40.png")
+  background-size: cover
+  background-attachment: fixed
+
+//Background image ajout_pilote.html
+#backgroundinscription
+  background-image: url("../img/photos/Background_inscription.png")
+  background-size: cover
+  background-attachment: fixed
+  height: 47.3rem
+
+//Background image pilote.html
+#backgroundpilote
+  background-image: url("../img/photos/AC2   2020-02-03 22_42_07.jpg")
+  background-size: cover
+  background-attachment: fixed
+
+
+//////////////////////////////////////////////////////////////
+//zoom-in et zoom-out + affichage couleurs mouse over photos//
+//////////////////////////////////////////////////////////////
+.img-hover-zoom
+
+  overflow: hidden // [1.2] Hide the overflowing of child elements //
+
+
+//[2] Transition property for smooth transformation of images //
+.img-hover-zoom img
+  transition: transform .5s ease
+
+
+// [3] Finally, transforming the image when container gets hovered //
+.img-hover-zoom:hover img
+  transform: scale(1.5)
+
+.img-hover-zoom--colorize img
+  transition: transform .5s, filter 1.5s ease-in-out
+  filter: grayscale(85%)
+
+
+/* The Transformation */
+.img-hover-zoom--colorize:hover img
+  filter: grayscale(0)
+  transform: scale(1.1)
+
+//Alignement jumbotron inscription
+.jumbotroninscription
+  align-items: center
+  justify-content: center
+  height: 80.8vh
+  opacity: 90%
+

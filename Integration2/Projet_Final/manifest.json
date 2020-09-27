@@ -1,0 +1,19 @@
+{
+  "name": "Projet Final",
+  "short_name": "P.Final",
+  "icons": [{
+    "src": "/img/icons/icon-256.png",
+    "sizes": "256x256",
+    "type": "image/png",
+    "purpose" : "any maskable"
+  }, {
+    "src": "/img/icons/icon-512.png",
+    "sizes": "512x512",
+    "type": "image/png",
+    "purpose" : "any maskable"
+  }],
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#3E4EB8",
+  "theme_color": "#2F3BA2"
+}

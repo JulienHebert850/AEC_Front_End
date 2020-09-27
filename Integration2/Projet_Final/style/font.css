@@ -1,0 +1,33 @@
+@font-face {
+  font-family: "Concielianbold";
+  src: url(../font/concielianbold.ttf);
+}
+@font-face {
+  font-family: "Concielianboldital";
+  src: url(../font/concielianboldital.ttf);
+}
+@font-face {
+  font-family: "Concielianlight";
+  src: url(../font/concielianlight.ttf);
+}
+@font-face {
+  font-family: "Concieliancond";
+  src: url(../font/concieliancond.ttf);
+}
+@font-face {
+  font-family: "Concielianbold";
+  src: url(../font/concielianbold.ttf);
+}
+@font-face {
+  font-family: "Prime";
+  src: url(../font/Prime-Regular.ttf);
+}
+h1 {
+  font-family: "Concielianboldital";
+}
+
+p, a {
+  font-family: "Prime";
+}
+
+/*# sourceMappingURL=font.css.map */
